@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html >
+		<STYLE TYPE="text/css">
+	h1 {
+		font-family: Helvetica, bold;
+		font-size:60px;
+		font-weight:100;	
+		color: black;
+		}
+	h1 {
+		font-family: Helvetica, bold;
+		font-size:40px;
+		font-weight:100;	
+		color: black;
+		}
+	p {
+		font-family: Helvetica;
+		font-size:12px;
+		font-weight:100;	
+		color: black;
+		}
+
+	<head>
+		<title>Creatavist</title>
+		<script type="text/javascript" src="//use.typekit.net/dgl6hob.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		<link rel="stylesheet" type="text/css" href="/static/css/homepage.css?m=092014">
+		<link rel="stylesheet" type="text/css" href="/static/css/plans.css?m=092014">
+		<link rel="stylesheet" type="text/css" href="/static/css/featured.css?m=092014">
+		<link rel="stylesheet" type="text/css" href="//cloud.typography.com/6749272/756122/css/fonts.css">
+		<link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="/favicon_creatavist.ico" />
+		<style>
+		/* desktop */
+				#desktop-writers-phone-device {
+			background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/writer-mobile-ridersprayer.png);
+		}
+		@media 
+		(-webkit-min-device-pixel-ratio: 2), 
+		(min-resolution: 192dpi) { 
+			#desktop-writers-phone-device {
+				background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/writer-mobile-ridersprayer@2x.png);
+			}
+		}
+		#desktop-writers-phone-avatar {
+			background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/writer-mobile-ridersprayer-avatar.png);
+		}
+		@media 
+		(-webkit-min-device-pixel-ratio: 2), 
+		(min-resolution: 192dpi) { 
+			#desktop-writers-phone-avatar {
+				background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/writer-mobile-ridersprayer-avatar@2x.png);
+			}
+		}
+		#desktop-writers-desktop-device {
+			background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/writer-desktop-bearman.png);
+		}
+		@media 
+		(-webkit-min-device-pixel-ratio: 2), 
+		(min-resolution: 192dpi) { 
+			#desktop-writers-desktop-device {
+				background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/writer-desktop-bearman@2x.png);
+			}
+		}
+		#desktop-writers-desktop-avatar {
+			background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/writer-desktop-bearman-avatar.png);
+		}
+		@media 
+		(-webkit-min-device-pixel-ratio: 2), 
+		(min-resolution: 192dpi) { 
+			#desktop-writers-desktop-avatar {
+				background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/writer-desktop-bearman-avatar@2x.png);
+			}
+		}
+		#desktop-writers-tablet-device {
+			background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/writer-tablet-gutbucket.png);
+		}
+		@media 
+		(-webkit-min-device-pixel-ratio: 2), 
+		(min-resolution: 192dpi) { 
+			#desktop-writers-tablet-device {
+				background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/writer-tablet-gutbucket@2x.png);
+			}
+		}
+		#desktop-writers-tablet-avatar {
+			background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/writer-tablet-gutbucket-avatar.png);
+		}
+		@media 
+		(-webkit-min-device-pixel-ratio: 2), 
+		(min-resolution: 192dpi) { 
+			#desktop-writers-tablet-avatar {
+				background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/writer-tablet-gutbucket-avatar@2x.png);
+			}
+		}
+				#desktop-publishers-phone-device {
+			background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/publisher-mobile-parisreview.png);
+		}
+		@media 
+		(-webkit-min-device-pixel-ratio: 2), 
+		(min-resolution: 192dpi) { 
+			#desktop-publishers-phone-device {
+				background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/publisher-mobile-parisreview@2x.png);
+			}
+		}
+		#desktop-publishers-phone-avatar {
+			background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/publisher-mobile-parisreview-avatar.png);
+		}
+		@media 
+		(-webkit-min-device-pixel-ratio: 2), 
+		(min-resolution: 192dpi) { 
+			#desktop-publishers-phone-avatar {
+				background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/publisher-mobile-parisreview-avatar@2x.png);
+			}
+		}
+		#desktop-publishers-desktop-device {
+			background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/publisher-desktop-tabletmag.png);
+		}
+		@media 
+		(-webkit-min-device-pixel-ratio: 2), 
+		(min-resolution: 192dpi) { 
+			#desktop-publishers-desktop-device {
+				background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/publisher-desktop-tabletmag@2x.png);
+			}
+		}
+		#desktop-publishers-desktop-avatar {
+			background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/publisher-desktop-tabletmag-avatar.png);
+		}
+		@media 
+		(-webkit-min-device-pixel-ratio: 2), 
+		(min-resolution: 192dpi) { 
+			#desktop-publishers-desktop-avatar {
+				background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/publisher-desktop-tabletmag-avatar@2x.png);
+			}
+		}
+		#desktop-publishers-tablet-device {
+			background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/publisher-tablet-atavist.png);
+		}
+		@media 
+		(-webkit-min-device-pixel-ratio: 2), 
+		(min-resolution: 192dpi) { 
+			#desktop-publishers-tablet-device {
+				background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/publisher-tablet-atavist@2x.png);
+			}
+		}
+		#desktop-publishers-tablet-avatar {
+			background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/publisher-tablet-atavist-avatar.png);
+		}
+		@media 
+		(-webkit-min-device-pixel-ratio: 2), 
+		(min-resolution: 192dpi) { 
+			#desktop-publishers-tablet-avatar {
+				background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/publisher-tablet-atavist-avatar@2x.png);
+			}
+		}
+				#desktop-more-phone-device {
+			background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/more-mobile-jostens.png);
+		}
+		@media 
+		(-webkit-min-device-pixel-ratio: 2), 
+		(min-resolution: 192dpi) { 
+			#desktop-more-phone-device {
+				background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/more-mobile-jostens@2x.png);
+			}
+		}
+		#desktop-more-phone-avatar {
+			background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/more-mobile-jostens-avatar.png);
+		}
+		@media 
+		(-webkit-min-device-pixel-ratio: 2), 
+		(min-resolution: 192dpi) { 
+			#desktop-more-phone-avatar {
+				background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/more-mobile-jostens-avatar@2x.png);
+			}
+		}
+		#desktop-more-desktop-device {
+			background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/more-desktop-wbur.png);
+		}
+		@media 
+		(-webkit-min-device-pixel-ratio: 2), 
+		(min-resolution: 192dpi) { 
+			#desktop-more-desktop-device {
+				background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/more-desktop-wbur@2x.png);
+			}
+		}
+		#desktop-more-desktop-avatar {
+			background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/more-desktop-wbur-avatar.png);
+		}
+		@media 
+		(-webkit-min-device-pixel-ratio: 2), 
+		(min-resolution: 192dpi) { 
+			#desktop-more-desktop-avatar {
+				background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/more-desktop-wbur-avatar@2x.png);
+			}
+		}
+		#desktop-more-tablet-device {
+			background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/more-tablet-blankonblank.png);
+		}
+		@media 
+		(-webkit-min-device-pixel-ratio: 2), 
+		(min-resolution: 192dpi) { 
+			#desktop-more-tablet-device {
+				background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/more-tablet-blankonblank@2x.png);
+			}
+		}
+		#desktop-more-tablet-avatar {
+			background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/more-tablet-blankonblank-avatar.png);
+		}
+		@media 
+		(-webkit-min-device-pixel-ratio: 2), 
+		(min-resolution: 192dpi) { 
+			#desktop-more-tablet-avatar {
+				background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/more-tablet-blankonblank-avatar@2x.png);
+			}
+		}
+		/* mobile */
+		#mobile-writers-desktop-device {
+			background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/writer-desktop-bearman.png);
+		}
+		@media 
+		(-webkit-min-device-pixel-ratio: 2), 
+		(min-resolution: 192dpi) { 
+			#mobile-writers-desktop-device {
+				background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/writer-desktop-bearman@2x.png);
+			}
+		}
+		#mobile-writers-phone-device {
+			background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/writer-desktop-bearman-resp.png);
+		}
+		@media 
+		(-webkit-min-device-pixel-ratio: 2), 
+		(min-resolution: 192dpi) { 
+			#mobile-writers-phone-device {
+				background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/writer-desktop-bearman-resp@2x.png);
+			}	
+		}
+		#mobile-writers-avatar {
+			background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/writer-desktop-bearman-avatar.png);
+		}
+		@media 
+		(-webkit-min-device-pixel-ratio: 2), 
+		(min-resolution: 192dpi) { 
+			#mobile-writers-avatar {
+				background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/writer-desktop-bearman-avatar@2x.png);
+			}
+		}
+		#mobile-publishers-desktop-device {
+			background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/publisher-desktop-tabletmag.png);
+		}
+		@media 
+		(-webkit-min-device-pixel-ratio: 2), 
+		(min-resolution: 192dpi) { 
+			#mobile-publishers-desktop-device {
+				background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/publisher-desktop-tabletmag@2x.png);
+			}
+		}
+		#mobile-publishers-phone-device {
+			background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/publisher-desktop-tabletmag-resp.png);
+		}
+		@media 
+		(-webkit-min-device-pixel-ratio: 2), 
+		(min-resolution: 192dpi) { 
+			#mobile-publishers-phone-device {
+				background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/publisher-desktop-tabletmag-resp@2x.png);
+			}	
+		}
+		#mobile-publishers-avatar {
+			background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/publisher-desktop-tabletmag-avatar.png);
+		}
+		@media 
+		(-webkit-min-device-pixel-ratio: 2), 
+		(min-resolution: 192dpi) { 
+			#mobile-publishers-avatar {
+				background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/publisher-desktop-tabletmag-avatar@2x.png);
+			}
+		}
+		#mobile-more-desktop-device {
+			background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/more-desktop-wbur.png);
+		}
+		@media 
+		(-webkit-min-device-pixel-ratio: 2), 
+		(min-resolution: 192dpi) { 
+			#mobile-more-desktop-device {
+				background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/more-desktop-wbur@2x.png);
+			}
+		}
+		#mobile-more-phone-device {
+			background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/more-desktop-wbur-resp.png);
+		}
+		@media 
+		(-webkit-min-device-pixel-ratio: 2), 
+		(min-resolution: 192dpi) { 
+			#mobile-more-phone-device {
+				background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/more-desktop-wbur-resp@2x.png);
+			}	
+		}
+		#mobile-more-avatar {
+			background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/more-desktop-wbur-avatar.png);
+		}
+		@media 
+		(-webkit-min-device-pixel-ratio: 2), 
+		(min-resolution: 192dpi) { 
+			#mobile-more-avatar {
+				background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/more-desktop-wbur-avatar@2x.png);
+			}
+		}
+		</style>
+	</head>
+	<body id="homepage">
+		<nav>
+	<a id="logo" href="/"><img src="/static/images/creatavist_white.svg" alt="Creatavist" class="creatavist-logo"></a>
+	<ul id="nav-right">
+		<li class="nav-social social">
+			<a href="https://www.facebook.com/creatavist" target="_blank"><i class="fa fa-facebook"></i></a>
+		</li>
+		<li class="nav-social social">
+			<a href="https://twitter.com/creatavist" target="_blank"><i class="fa fa-twitter"></i></a>
+		</li>
+				<li><a class="button no-underline blog" href="http://blog.creatavist.com/">Blog</a></li>
+		<li><a class="button no-underline stories" href="/featured">Featured</a></li>
+						<li>
+			<a href="/cms/" class="button">My Projects</a>
+		</li>
+	</ul>
+</nav>		<header id="header" class="header-styles" style="background-image: url(//atavist-static.s3.amazonaws.com/images/homepage/articles/carousel-kithfolk.jpg);">
+			<form id="header-signup" class="step-1" action="/signup" method="GET">
+				<h1>Create amazing stories</h1>
+				<input name="email" type="text" placeholder="Enter your email">
+				<button class="button cta">Try it for free</button>
+			</form>	
+			<div class="banner-credit">
+				<div class="avatar" style="background-image:url(//atavist-static.s3.amazonaws.com/images/homepage/articles/carousel-kithfolk-avatar@2x.png);"></div>
+				<div class="title">Issue No. 1</div>
+				<div class="author">from Kithfolk</div>
+			</div>
+		</header>
+				<h2 id="stories-title"><span class="description-desktop">Creatavist is a powerful online tool for</span><span class="description-mobile">A powerful online tool for</span> <span id="who-its-for"><a class="story-trigger-enabled" data-selector="story-enabled-writers" href="#">writers</a>, <a href="#" data-selector="story-enabled-publishers">publishers</a>, and <a data-selector="story-enabled-more" href="#">more</a>.</span></h2>
+		<section id="stories">
+			<a id='see-featured' href='/featured'><span class="button">Read Featured Stories</span></a>
+			<div class="carousel slide">
+			<div class="carousel-inner" id="stories-desktop">
+				<div class="story-types story-section-writers item active">
+				<div class="phone preview">
+					<div id="desktop-writers-phone-device" class="device"></div>
+					<div class="title">The Rider&rsquo;s Prayer</div>
+					<div class="author">by Sarah Menkedick</div>
+					<div id="desktop-writers-phone-avatar" class="avatar"></div>
+				</div>
+				<div class="desktop preview">
+					<div id="desktop-writers-desktop-device" class="device"></div>
+					<div class="title">Coronado High</div>
+					<div class="author">by Joshuah Bearman</div>
+					<div id="desktop-writers-desktop-avatar" class="avatar"></div>
+				</div>
+				<div class="tablet preview">
+					<div id="desktop-writers-tablet-device" class="device"></div>
+					<div class="title">The Gutbucket King</div>
+					<div class="author">by Barry Yeoman</div>
+					<div id="desktop-writers-tablet-avatar" class="avatar"></div>
+				</div>
+				</div>
+				<div class="story-types story-section-publishers item ">
+				<div class="phone preview">
+					<div id="desktop-publishers-phone-device" class="device"></div>
+					<div class="title">The Paris Review</div>
+					<div class="author"> </div>
+					<div id="desktop-publishers-phone-avatar" class="avatar"></div>
+				</div>
+				<div class="desktop preview">
+					<div id="desktop-publishers-desktop-device" class="device"></div>
+					<div class="title">Tablet Magazine</div>
+					<div class="author"> </div>
+					<div id="desktop-publishers-desktop-avatar" class="avatar"></div>
+				</div>
+				<div class="tablet preview">
+					<div id="desktop-publishers-tablet-device" class="device"></div>
+					<div class="title">The Atavist</div>
+					<div class="author"> </div>
+					<div id="desktop-publishers-tablet-avatar" class="avatar"></div>
+				</div>
+				</div>
+				<div class="story-types story-section-more item ">
+				<div class="phone preview">
+					<div id="desktop-more-phone-device" class="device"></div>
+					<div class="title">Look Book 2014</div>
+					<div class="author">by Jostens</div>
+					<div id="desktop-more-phone-avatar" class="avatar"></div>
+				</div>
+				<div class="desktop preview">
+					<div id="desktop-more-desktop-device" class="device"></div>
+					<div class="title">Bulger on Trial</div>
+					<div class="author">by WBUR</div>
+					<div id="desktop-more-desktop-avatar" class="avatar"></div>
+				</div>
+				<div class="tablet preview">
+					<div id="desktop-more-tablet-device" class="device"></div>
+					<div class="title">Heath Ledger: The Lost Interview</div>
+					<div class="author">by Blank on Blank</div>
+					<div id="desktop-more-tablet-avatar" class="avatar"></div>
+				</div>
+				</div>
+		
+			</div>
+			</div>
+			<div class="carousel slide">
+			<div class="carousel-inner" id="stories-mobile">
+				<div class="story-types story-section-writers item active">
+					<div class="phone preview">
+						<div id="mobile-writers-phone-device" class="device">
+						</div>
+					</div>
+					<div class="desktop preview">
+						<div id="mobile-writers-desktop-device" class="device">
+						</div>
+					</div>
+					<div class="title">Coronado High</div>
+					<div class="author">by Joshuah Bearman</div>
+					<div id="mobile-writers-avatar" class="avatar"></div>
+				</div>
+				<div class="story-types story-section-publishers item ">
+					<div class="phone preview">
+						<div id="mobile-publishers-phone-device" class="device">
+						</div>
+					</div>
+					<div class="desktop preview">
+						<div id="mobile-publishers-desktop-device" class="device">
+						</div>
+					</div>
+					<div class="title">Tablet Magazine</div>
+					<div class="author"> </div>
+					<div id="mobile-publishers-avatar" class="avatar"></div>
+				</div>
+				<div class="story-types story-section-more item ">
+					<div class="phone preview">
+						<div id="mobile-more-phone-device" class="device">
+						</div>
+					</div>
+					<div class="desktop preview">
+						<div id="mobile-more-desktop-device" class="device">
+						</div>
+					</div>
+					<div class="title">Bulger on Trial</div>
+					<div class="author">by WBUR</div>
+					<div id="mobile-more-avatar" class="avatar"></div>
+				</div>
+		
+			</div>
+			</div>	
+		</section>
+		<section id="sub-header" class="header-styles">
+			<div>
+				<h1>Surprise your readers</h1>
+				<p>
+					Create a reading experience that engages your audience. Creatavist empowers you to tell beautiful stories composed of text, images, video, maps, and more. You are not limited to a given format or platform. Produce a story, e-book, magazine, video narrative, stunning report – and publish it to the web, e-readers, the Creatavist app, or your own app. Creatavist takes you to the forefront of digital storytelling, so that you can focus on publishing what you want, how you want.
+				</p>
+				<p class="plans">
+					<a class="button" id="see-plans" href="/plans">See Our Plans</a>
+				</p>		
+			</div>
+		</section>
+		<section id="features">
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 250 612 265.8" enable-background="new 0 250 612 265.8" xml:space="preserve" id="features-svg-landscape">
+<g id="background" display="none">
+</g>
+<g id="panels">
+	<g id="_x34_._even_launch">
+		<g>
+			<polygon points="529.4,304.9 389.2,304.9 389.2,323.1 529.4,463.7 			"/>
+		</g>
+		<g>
+			<path fill="none" d="M523.7,308.8H392.6c-0.4,0.4-0.9,1.6-0.9,3.5V326l133,133V312.3C524.7,310.3,524,309.2,523.7,308.8z"/>
+			<path fill="#DFDFD5" d="M391.7,312.3c0-1.9,0.5-3.1,0.9-3.5h131.2c0.4,0.4,0.9,1.6,0.9,3.5v146.7l7,7V312.3
+				c0-5.9-3.2-10.5-7.4-10.5H392.2c-4.3,0-7.4,4.5-7.4,10.5v6.8l7,7L391.7,312.3L391.7,312.3z"/>
+		</g>
+		<path fill="#333333" d="M412,337.9c0,3.2,2.7,5.9,5.9,5.9h10.3c3.2,0,5.9-2.7,5.9-5.9v-10.3c0-3.2-2.7-5.9-5.9-5.9h-10.3
+			c-3.2,0-5.9,2.7-5.9,5.9V337.9z"/>
+		<path fill="#333333" d="M447,337.9c0,3.2,2.7,5.9,5.9,5.9h10.3c3.2,0,5.9-2.7,5.9-5.9v-10.3c0-3.2-2.7-5.9-5.9-5.9h-10.3
+			c-3.2,0-5.9,2.7-5.9,5.9V337.9z"/>
+		<path fill="#FFFFFF" d="M482.1,337.9c0,3.2,2.7,5.9,5.9,5.9h10.3c3.2,0,5.9-2.7,5.9-5.9v-10.3c0-3.2-2.7-5.9-5.9-5.9h-10.3
+			c-3.2,0-5.9,2.7-5.9,5.9V337.9z"/>
+		<path fill="#333333" d="M447,372.9c0,3.2,2.7,5.9,5.9,5.9h10.3c3.2,0,5.9-2.7,5.9-5.9v-10.3c0-3.2-2.7-5.9-5.9-5.9h-10.3
+			c-3.2,0-5.9,2.7-5.9,5.9V372.9z"/>
+		<path fill="#333333" d="M482.1,372.9c0,3.2,2.7,5.9,5.9,5.9h10.3c3.2,0,5.9-2.7,5.9-5.9v-10.3c0-3.2-2.7-5.9-5.9-5.9h-10.3
+			c-3.2,0-5.9,2.7-5.9,5.9V372.9z"/>
+		<path fill="#333333" d="M482.1,408c0,3.2,2.7,5.9,5.9,5.9h10.3c3.2,0,5.9-2.7,5.9-5.9v-10.3c0-3.2-2.7-5.9-5.9-5.9h-10.3
+			c-3.2,0-5.9,2.7-5.9,5.9V408z"/>
+		<g>
+			<path fill="#333333" d="M434.2,362.5c0-3.2-2.7-5.9-5.9-5.9h-6.3l12.3,12.5V362.5z"/>
+		</g>
+		<g>
+			<path fill="#333333" d="M469.2,397.7c0-3.2-2.7-5.9-5.9-5.9h-5.9l11.9,11.9V397.7z"/>
+		</g>
+		<path d="M554.5,333.7c-0.3,0.3-0.6,0.4-1,0.4h-58.7c-0.9,0-1.4-0.6-1.4-1.4c0-0.9,0.6-1.4,1.4-1.4h58.7c0.9,0,1.4,0.6,1.4,1.4
+			C554.9,333.1,554.8,333.5,554.5,333.7z"/>
+	</g>
+	<g id="_x33_._publish_anywhere">
+		<g>
+			<polygon points="378.1,355.9 306,355.9 300.3,361.5 378.1,361.5 			"/>
+		</g>
+		<g>
+			<polygon points="378.1,366.3 295.7,366.3 290,372 378.1,372 			"/>
+		</g>
+		<g>
+			<polygon points="368.3,376.8 285.2,376.8 279.6,382.3 368.3,382.3 			"/>
+		</g>
+		<g>
+			<polygon points="378.1,335.1 326.8,335.1 321.1,340.8 378.1,340.8 			"/>
+		</g>
+		<g>
+			<polygon points="378.1,345.6 316.3,345.6 310.8,351.2 378.1,351.2 			"/>
+		</g>
+		<rect x="371.6" y="376.3" transform="matrix(0.7071 0.7071 -0.7071 0.7071 378.006 -153.8413)" width="6.2" height="6.2"/>
+		<circle cx="420.4" cy="434.5" r="12"/>
+		<circle cx="380.3" cy="434.5" r="12"/>
+		<circle cx="340.2" cy="434.5" r="12"/>
+		<circle cx="300.2" cy="434.5" r="12"/>
+		<circle cx="260.1" cy="434.5" r="12"/>
+		<g>
+			<path d="M299.8,453.8c-0.1-0.3-0.3-0.5-0.3-0.8c0-0.6,0-1-0.5-1.4c-1.4-1.3-2.7-2.7-3.6-4.4c-0.6-1-1.4-2.1-2.2-3
+				c-0.8-1-0.6-2.3,0-3.1c0.9-0.9,2.1-1,3.2-0.3c0.5,0.4,0.9,0.6,1.4,1.2c-0.3-0.9-0.4-1.6-0.5-2.3c-0.3-1.4-0.6-3-0.9-4.4
+				c-0.1-0.5,0-1.2,0.1-1.7c0.3-1.6,2.5-1.8,3.1-0.9c0.5,0.8,1,1.6,1.3,2.5c0.3,0.9,0.4,1.7,0.6,2.5c0.6-0.1,1.3-0.4,2.1-0.4
+				c0.8,0,1.3,0.4,1.7,1c0.6-0.6,1.6-0.9,2.5-0.8c1,0.1,1.6,0.8,1.8,1.7c0.4-0.1,0.6-0.3,1-0.4c0.9-0.3,1.7,0.3,2.1,1
+				c0.1,0.3,0.3,0.5,0.3,0.9c0.1,1.9,0,3.7-0.4,5.6c-0.3,0.8-0.6,1.6-1.2,2.3c-0.5,0.8-1.3,1.4-1.4,2.5c0,0.4,0,0.9,0,1.4
+				c0.1,0.9,0.1,0.9-0.6,1.3c-0.5,0-0.9,0-1.4,0c-0.6-0.5-1.3-1-1.8-1.6c-0.5,0.5-1.2,1-1.7,1.6
+				C302.9,453.8,301.4,453.8,299.8,453.8z M309,452.7c0-0.1,0-0.3,0-0.4c-0.1-1.3,0.1-2.5,1-3.4c0.4-0.5,0.9-1,1.2-1.7
+				c1-2.1,0.9-4.4,0.8-6.7c0-0.3-0.4-0.6-0.6-0.6c-0.4-0.1-0.8,0.1-1,0.4c-0.1,0.1-0.1,0.4-0.3,0.5c-0.1,0.3-0.3,0.6-0.6,0.6
+				c-0.4,0-0.4-0.4-0.5-0.6c-0.1-0.5-0.1-1-0.4-1.6c-0.3-0.6-0.6-0.8-1.4-0.6c-0.6,0-0.9,0.3-1,0.9c0,0.4-0.1,0.9-0.3,1.3
+				c0,0.4-0.1,0.6-0.5,0.6s-0.5-0.3-0.5-0.6c-0.1-0.6-0.1-1.2-0.3-1.8c-0.3-0.6-0.8-0.9-1.6-0.8c-0.5,0.1-0.9,0.4-0.9,1.2
+				c0,0.4,0,0.9,0,1.4c0,0.4-0.1,0.6-0.5,0.6s-0.4-0.3-0.5-0.6c-0.3-1.6-0.5-3.1-0.9-4.7c-0.3-0.9-0.6-1.7-1-2.5
+				c-0.3-0.4-0.6-0.6-1.2-0.4c-0.5,0.1-0.6,0.4-0.6,0.9c0,0.4-0.1,0.9,0,1.4c0.3,1.3,0.6,2.6,0.9,3.9c0.3,1.4,0.5,2.8,0.9,4.3
+				c0,0.3,0,0.6-0.4,0.6c-0.3,0-0.5-0.1-0.6-0.3c-0.3-0.3-0.3-0.4-0.5-0.6c-0.6-0.8-1.3-1.7-2.2-2.1c-1-0.4-1.9,0.3-1.8,1.4
+				c0,0.3,0.3,0.6,0.4,0.9c0.8,1,1.6,1.9,2.2,3c0.9,1.4,1.9,2.8,3.1,3.9c0.6,0.6,1.3,1.3,1.2,2.3c0.9,0,1.8,0,2.7,0
+				c0.8,0,1.3-0.3,1.7-0.9c0.9-1.3,1.4-1.3,2.3,0C307.7,452.6,308.2,453,309,452.7z"/>
+			<path fill="#FFFFFF" d="M304.5,453.8c0.6-0.5,1.2-1,1.7-1.6c0.5,0.4,1.2,1,1.8,1.6C306.8,453.8,305.6,453.8,304.5,453.8z"/>
+			<path fill="#FFFFFF" d="M309,452.7c-0.9,0.3-1.3-0.1-1.7-0.8c-0.9-1.3-1.4-1.3-2.3,0c-0.4,0.6-0.9,0.9-1.7,0.9
+				c-0.9,0-1.8,0-2.7,0c0.1-1-0.4-1.7-1.2-2.3c-1.3-1-2.3-2.5-3.1-3.9c-0.6-1-1.4-1.9-2.2-3c-0.3-0.3-0.4-0.6-0.4-0.9
+				c-0.1-1,0.9-1.8,1.8-1.4c1,0.4,1.7,1.2,2.2,2.1c0.1,0.3,0.3,0.5,0.5,0.6s0.4,0.4,0.6,0.3c0.4,0,0.4-0.4,0.4-0.6
+				c-0.3-1.4-0.5-2.8-0.9-4.3c-0.3-1.3-0.6-2.6-0.9-3.9c-0.1-0.4,0-0.9,0-1.4c0-0.4,0.3-0.8,0.6-0.9c0.5-0.1,0.9,0,1.2,0.4
+				c0.4,0.8,0.9,1.7,1,2.5c0.4,1.6,0.6,3.1,0.9,4.7c0,0.4,0.1,0.6,0.5,0.6c0.4,0,0.5-0.4,0.5-0.6c0-0.4,0-0.9,0-1.4
+				c0-0.6,0.3-1,0.9-1.2c0.8-0.1,1.4,0.1,1.6,0.8c0.1,0.6,0.3,1.2,0.3,1.8c0,0.4,0.1,0.6,0.5,0.6c0.4,0,0.5-0.3,0.5-0.6
+				s0.1-0.9,0.3-1.3c0.1-0.6,0.4-0.9,1-0.9c0.8-0.1,1.3,0.1,1.4,0.6c0.1,0.5,0.3,1,0.4,1.6c0,0.3,0.1,0.6,0.5,0.6
+				c0.4,0,0.5-0.3,0.6-0.6c0-0.3,0.1-0.4,0.3-0.5c0.3-0.4,0.6-0.6,1-0.4c0.3,0.1,0.6,0.4,0.6,0.6c0.1,2.3,0.3,4.7-0.8,6.7
+				c-0.3,0.6-0.8,1.2-1.2,1.7c-0.9,1-1,2.2-1,3.4C309,452.5,309,452.6,309,452.7z M303.3,447L303.3,447c0-0.8,0-1.4,0-2.2
+				c0-0.4-0.1-0.6-0.5-0.6c-0.4,0-0.5,0.3-0.5,0.6c0,1.4,0,3,0,4.4c0,0.4,0.1,0.6,0.5,0.6c0.4,0,0.5-0.3,0.5-0.6
+				C303.3,448.5,303.3,447.7,303.3,447z M305,446.9L305,446.9c0,0.8,0,1.6,0,2.3c0,0.4,0.3,0.6,0.5,0.5c0.3,0,0.4-0.4,0.4-0.5
+				c0-1.6,0-3.1,0-4.5c0-0.4-0.1-0.6-0.5-0.5c-0.4,0-0.5,0.3-0.5,0.6C305,445.4,305,446.1,305,446.9z M308.7,447L308.7,447
+				c0-0.8,0-1.6,0-2.3c0-0.4-0.1-0.6-0.5-0.6c-0.4,0-0.5,0.3-0.5,0.6c0,1.4,0,3,0,4.5c0,0.4,0.1,0.6,0.5,0.5c0.4,0,0.5-0.3,0.5-0.6
+				C308.7,448.5,308.7,447.7,308.7,447z"/>
+			<path d="M303.3,447c0,0.6,0,1.4,0,2.1c0,0.4-0.1,0.6-0.5,0.6c-0.4,0-0.5-0.3-0.5-0.6c0-1.4,0-3,0-4.4c0-0.4,0.1-0.6,0.5-0.6
+				c0.4,0,0.5,0.3,0.5,0.6C303.3,445.5,303.3,446.3,303.3,447L303.3,447z"/>
+			<path d="M305,446.9c0-0.8,0-1.4,0-2.2c0-0.4,0.1-0.6,0.5-0.6s0.5,0.3,0.5,0.5c0,1.6,0,3.1,0,4.5c0,0.3-0.3,0.5-0.4,0.5
+				c-0.4,0-0.5-0.3-0.5-0.5C305,448.5,305,447.7,305,446.9L305,446.9z"/>
+			<path d="M308.7,447c0,0.8,0,1.4,0,2.2c0,0.4-0.1,0.6-0.5,0.6c-0.4,0-0.5-0.3-0.5-0.5c0-1.4,0-3,0-4.5c0-0.4,0.1-0.6,0.5-0.6
+				c0.4,0,0.5,0.3,0.5,0.6C308.7,445.5,308.7,446.3,308.7,447L308.7,447z"/>
+		</g>
+		<g>
+			<polygon fill="#DFDFD5" points="385,318.9 344.4,318.9 337.5,325.8 391.8,325.8 			"/>
+			<path fill="#DFDFD5" d="M451.5,385.3V458c0,1-1.4,2.1-3.4,2.1H238.6l6.6,7H448c5.7,0,10.3-4,10.3-9v-65.9L451.5,385.3z"/>
+		</g>
+	</g>
+	<g id="_x32_._design_it">
+		<g>
+			<path fill="none" d="M310.3,308.8H123c-1,0-2.2,1.4-2.2,3.5v27.5l100.7,100.7l91-91v-37.2C312.5,310.2,311.2,308.8,310.3,308.8z"
+				/>
+			<path fill="#DFDFD5" d="M120.8,312.3c0-1.9,1.2-3.5,2.2-3.5h187.2c1,0,2.2,1.4,2.2,3.5v37.2l7-7v-30.4c0-5.7-4.1-10.5-9-10.5H123
+				c-5,0-9,4.7-9,10.5v20.7l7,7L120.8,312.3L120.8,312.3z"/>
+		</g>
+		<g>
+			<polygon points="300.7,361.2 142.2,361.2 221.5,440.5 			"/>
+		</g>
+		<rect x="143.2" y="321.4" width="86.1" height="5.6"/>
+		<rect x="143.2" y="331.9" width="86.1" height="5.6"/>
+		<rect x="143.2" y="342.2" width="86.1" height="5.6"/>
+		<path d="M263.4,316.7c-4.7,0-9.2,3.1-9.2,9.7c0,7,9.2,22.4,9.2,22.4s9-15.4,9-23C272.5,320,268,316.7,263.4,316.7z M263.5,329.7
+			c-2.3,0-4.1-1.8-4.1-4.1c0-2.3,1.8-4.1,4.1-4.1s4.1,1.8,4.1,4.1C267.6,327.9,265.8,329.7,263.5,329.7z"/>
+	</g>
+	<g id="_x31_._start_a_project">
+		<path d="M191.9,415.5H186c-0.5,0-1-0.4-1-1c0-0.5,0.4-1,1-1h5.9c0.5,0,1,0.4,1,1C192.8,415.1,192.4,415.5,191.9,415.5z M180,415.5
+			h-5.9c-0.5,0-1-0.4-1-1c0-0.5,0.4-1,1-1h5.9c0.5,0,1,0.4,1,1C181,415.1,180.5,415.5,180,415.5z M168.1,415.5h-5.9
+			c-0.5,0-1-0.4-1-1c0-0.5,0.4-1,1-1h5.9c0.5,0,1,0.4,1,1C169.2,415.1,168.6,415.5,168.1,415.5z M156.2,415.5h-5.9c-0.5,0-1-0.4-1-1
+			c0-0.5,0.4-1,1-1h5.9c0.5,0,1,0.4,1,1C157.3,415.1,156.9,415.5,156.2,415.5z M144.5,415.5h-5.9c-0.5,0-1-0.4-1-1c0-0.5,0.4-1,1-1
+			h5.9c0.5,0,1,0.4,1,1C145.4,415.1,145,415.5,144.5,415.5z M132.5,415.5h-5.9c-0.5,0-1-0.4-1-1c0-0.5,0.4-1,1-1h5.9
+			c0.5,0,1,0.4,1,1C133.5,415.1,133.1,415.5,132.5,415.5z M120.7,415.5h-5.9c-0.5,0-1-0.4-1-1c0-0.5,0.4-1,1-1h5.9c0.5,0,1,0.4,1,1
+			C121.6,415.1,121.2,415.5,120.7,415.5z M108.8,415.5h-5.9c-0.5,0-1-0.4-1-1c0-0.5,0.4-1,1-1h5.9c0.5,0,1,0.4,1,1
+			C109.7,415.1,109.3,415.5,108.8,415.5z M96.9,415.5H91c-0.5,0-1-0.4-1-1c0-0.5,0.4-1,1-1h5.9c0.5,0,1,0.4,1,1
+			C98,415.1,97.4,415.5,96.9,415.5z M85,415.5h-5.9c-0.5,0-1-0.4-1-1c0-0.5,0.4-1,1-1H85c0.5,0,1,0.4,1,1
+			C85.9,415.1,85.6,415.5,85,415.5z M73.1,415.5h-5.9c-0.5,0-1-0.4-1-1c0-0.5,0.4-1,1-1h5.9c0.5,0,1,0.4,1,1
+			C74.2,415.1,73.7,415.5,73.1,415.5z M61.3,415.5h-5.9c-0.5,0-1-0.4-1-1c0-0.5,0.4-1,1-1h5.9c0.5,0,1,0.4,1,1
+			C62.3,415.1,61.8,415.5,61.3,415.5z M49.4,415.5h-5.9c-0.5,0-1-0.4-1-1c0-0.5,0.4-1,1-1h5.9c0.5,0,1,0.4,1,1
+			C50.4,415.1,50,415.5,49.4,415.5z M37.6,414.9c-0.1,0-0.4,0-0.5-0.1c-2.1-1.2-3.4-3.2-3.6-5.7c0-0.5,0.4-1,0.9-1
+			c0.5,0,1,0.4,1,0.9c0.1,1.7,1,3.1,2.6,4c0.5,0.3,0.6,0.9,0.4,1.3C38.4,414.6,38,414.9,37.6,414.9z M34.6,404.1c-0.5,0-1-0.4-1-1
+			v-5.9c0-0.5,0.4-1,1-1s1,0.4,1,1v5.9C35.7,403.6,35.2,404.1,34.6,404.1z M34.6,392.1c-0.5,0-1-0.4-1-1v-5.9c0-0.5,0.4-1,1-1
+			s1,0.4,1,1v5.9C35.7,391.7,35.2,392.1,34.6,392.1z M34.6,380.4c-0.5,0-1-0.4-1-1l0,0c0-2.3,1.2-4.5,3.1-5.8c0.4-0.3,1-0.1,1.4,0.3
+			c0.3,0.4,0.1,1-0.3,1.4c-1.4,0.9-2.3,2.5-2.3,4.1C35.7,379.9,35.2,380.4,34.6,380.4z M152.6,374.4h-2.7c-0.5,0-1-0.4-1-1
+			c0-0.6,0.4-1,1-1h2.7c0.5,0,1,0.4,1,1C153.7,374,153.3,374.4,152.6,374.4z M144,374.4h-5.8c-0.5,0-1-0.4-1-1c0-0.6,0.4-1,1-1h5.9
+			c0.5,0,1,0.4,1,1C145.1,374,144.6,374.4,144,374.4z M132.2,374.4h-5.9c-0.5,0-1-0.4-1-1c0-0.6,0.4-1,1-1h5.9c0.5,0,1,0.4,1,1
+			C133.2,374,132.7,374.4,132.2,374.4z M120.2,374.4h-5.9c-0.5,0-1-0.4-1-1c0-0.6,0.4-1,1-1h5.9c0.5,0,1,0.4,1,1
+			C121.2,374,120.8,374.4,120.2,374.4z M108.4,374.4h-5.9c-0.5,0-1-0.4-1-1c0-0.6,0.4-1,1-1h5.9c0.5,0,1,0.4,1,1
+			C109.5,374,108.9,374.4,108.4,374.4z M96.5,374.4h-5.9c-0.5,0-1-0.4-1-1c0-0.6,0.4-1,1-1h5.9c0.5,0,1,0.4,1,1
+			C97.6,374,97.1,374.4,96.5,374.4z M84.6,374.4h-5.9c-0.5,0-1-0.4-1-1c0-0.6,0.4-1,1-1h5.9c0.5,0,1,0.4,1,1
+			C85.7,374,85.2,374.4,84.6,374.4z M72.8,374.4h-5.9c-0.5,0-1-0.4-1-1c0-0.6,0.4-1,1-1h5.9c0.5,0,1,0.4,1,1
+			C73.8,374,73.3,374.4,72.8,374.4z M60.9,374.4h-5.9c-0.5,0-1-0.4-1-1c0-0.6,0.4-1,1-1h5.9c0.5,0,1,0.4,1,1
+			C61.9,374,61.4,374.4,60.9,374.4z M49,374.4H43c-0.5,0-1-0.4-1-1c0-0.6,0.4-1,1-1H49c0.5,0,1,0.4,1,1C50,374,49.5,374.4,49,374.4z
+			"/>
+		<g>
+			<line fill="none" x1="68.8" y1="289.9" x2="75.6" y2="296.9"/>
+			<path fill="#DFDFD5" d="M223.9,460.1l4.9,4.9"/>
+		</g>
+		<g>
+			<polygon points="74.3,295 12,295 12,337.5 116.8,337.5 			"/>
+		</g>
+		<g>
+			<polygon points="217.5,439 12,439 12,448.2 215.4,448.2 221,442.5 			"/>
+		</g>
+		<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M203.8,460.1"/>
+		<g>
+			<path fill="none" d="M15,299v145.1c0,1,1.4,2.1,3.4,2.1h199l3.4-3.5L74.8,296.9H18.4C16.4,296.9,15,297.9,15,299z"/>
+			<path fill="#DFDFD5" d="M18.4,446.3c-1.9,0-3.4-1.2-3.4-2.1V299c0-1,1.4-2.1,3.4-2.1h56.5l-7-7H18.4c-5.7,0-10.3,4-10.3,9v145.1
+				c0,5,4.7,9,10.3,9h192.3l6.7-7L18.4,446.3L18.4,446.3z"/>
+		</g>
+		<rect x="52.1" y="382.3" width="8" height="22.9"/>
+		<rect x="44.7" y="389.7" width="22.9" height="8"/>
+	</g>
+	<g id="text">
+		<rect x="73.3" y="390.2" fill="none" width="60.3" height="14.9"/>
+		<rect x="561.2" y="329.7" fill="none" width="53.2" height="14.9"/>
+		<rect x="406.5" y="411" fill="none" width="28.7" height="10.9"/>
+		<rect x="365.2" y="411" fill="none" width="28.7" height="10.9"/>
+		<rect x="325.9" y="411" fill="none" width="28.7" height="10.9"/>
+		<rect x="287.9" y="411" fill="none" width="28.7" height="10.9"/>
+		<rect x="245.8" y="411" fill="none" width="28.7" height="10.9"/>
+		<rect x="8.1" y="469.1" fill="none" width="172" height="33.1"/>
+		<rect x="115.8" y="259.3" fill="none" width="226.3" height="33.1"/>
+		<rect x="292.7" y="482.7" fill="none" width="223.2" height="33.1"/>
+		<rect x="406.5" y="259.9" fill="none" width="225.6" height="32.4"/>
+	</g>
+	<polygon fill="#FFFFFF" points="339.5,443.8 330.7,438.6 333.3,434.1 337.8,436.8 344.6,426.1 349,429 	"/>
+	<polygon fill="#FFFFFF" points="379.5,443.8 370.7,438.6 373.3,434.1 377.9,436.8 384.7,426.1 389.1,429 	"/>
+	<polygon fill="#FFFFFF" points="223.9,421.4 223.9,392.9 238.2,407.2 	"/>
+</g>
+<g id="text_1_">
+	<text transform="matrix(1 0 0 1 73.3363 395.4867)" fill="#DFDFD5" class="svg-proxima" font-size="7.9084">My New Story</text>
+	<text transform="matrix(1 0 0 1 561.1889 335.021)" class="svg-proxima" font-size="7.9084">Your app here</text>
+	<text transform="matrix(1 0 0 1 409.7065 416.2475)" fill="#DFDFD5" class="svg-proxima" font-size="7.9084">Kindle</text>
+	<text transform="matrix(1 0 0 1 369.4163 416.2475)" fill="#DFDFD5" class="svg-proxima" font-size="7.9084">iBook</text>
+	<text transform="matrix(1 0 0 1 332.1761 416.2475)" fill="#DFDFD5" class="svg-proxima" font-size="7.9084">Web</text>
+	<text transform="matrix(1 0 0 1 292.8089 416.2475)" fill="#DFDFD5" class="svg-proxima" font-size="7.9084">Nook</text>
+	<text transform="matrix(1 0 0 1 252.933 416.2475)" fill="#DFDFD5" class="svg-proxima" font-size="7.9084">App</text>
+	<text transform="matrix(1 0 0 1 8.0918 480.8529)" fill="#010101" class="svg-mercury" font-size="15.8169">1. Start a project</text>
+	<text transform="matrix(1 0 0 1 8.0918 494.6918)" fill="#010101" class="svg-proxima" font-size="7.9084">It’s easy. Everyone has a story.</text>
+	<text transform="matrix(1 0 0 1 115.7944 270.9857)" fill="#010101" class="svg-mercury" font-size="15.8169">2. Design it how you want</text>
+	<text transform="matrix(1 0 0 1 115.7944 284.8255)" fill="#010101" class="svg-proxima" font-size="7.9084">Layer in images, video, maps, timelines, and more.</text>
+	<text transform="matrix(1 0 0 1 292.6694 494.3998)" fill="#010101" class="svg-mercury" font-size="15.8169">3. Publish anywhere</text>
+	<text transform="matrix(1 0 0 1 292.6694 508.2407)" fill="#010101" class="svg-proxima" font-size="7.9084">A beautiful read on any platform.</text>
+	<text transform="matrix(1 0 0 1 406.4799 271.6078)" fill="#010101" class="svg-mercury" font-size="15.8169">4. Even launch an app</text>
+	<text transform="matrix(1 0 0 1 406.4799 285.4478)" fill="#010101" class="svg-proxima" font-size="7.9084">Subscribe to our Pro Plan and get total control.</text>
+</g>
+<g id="bars">
+	<g id="bars_1_">
+		<path fill="#CA2027" d="M261.2,483.2c-0.4,0-0.8-0.1-1-0.4L54,276.7c-0.6-0.6-0.6-1.6,0-2.1c0.6-0.6,1.6-0.6,2.1,0l206.1,206.1
+			c0.6,0.6,0.6,1.6,0,2.1C261.9,483.1,261.6,483.2,261.2,483.2z"/>
+		<path fill="#CA2027" d="M548.3,483.2c-0.4,0-0.8-0.1-1-0.4L341.2,276.7c-0.6-0.6-0.6-1.6,0-2.1c0.6-0.6,1.6-0.6,2.1,0l206.1,206.1
+			c0.6,0.6,0.6,1.6,0,2.1C549.1,483.1,548.7,483.2,548.3,483.2z"/>
+		<path fill="#CA2027" d="M180,481.8c0-0.4,0.1-0.8,0.4-1l206.1-206.1c0.6-0.6,1.6-0.6,2.1,0c0.6,0.6,0.6,1.6,0,2.1l-206,206.1
+			c-0.6,0.6-1.6,0.6-2.1,0C180.1,482.6,180,482.2,180,481.8z"/>
+	</g>
+</g>
+</svg>
+
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="978.3 246 309.7 638" enable-background="new 978.3 246 309.7 638" xml:space="preserve" id="features-svg-portrait">
+<g id="background" display="none">
+	<g display="inline" opacity="0.2">
+		<defs>
+			<rect id="SVGID_1_" x="995.3" y="239.6" opacity="0.2" width="272.3" height="696.7"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  overflow="visible"/>
+		</clipPath>
+		<g id="CqxCwp_1_" clip-path="url(#SVGID_2_)">			
+		</g>
+	</g>
+</g>
+<g id="panels">
+	<g>
+		<polygon points="1167.4,660.2 1075.5,752.2 1075.5,831.9 1212.7,831.9 1212.7,660.2 		"/>
+	</g>
+	<g>
+		<polygon points="1041.6,308.8 1041.6,350.5 1190,350.5 1231.7,308.8 		"/>
+	</g>
+	<g>
+		<polygon points="1255,490 1089.7,490 1174.2,574.5 1255,574.5 		"/>
+	</g>
+	<g>
+		<polygon points="1176.3,458.9 1176.3,453.3 1053,453.3 1058.6,458.9 		"/>
+	</g>
+	<g>
+		<polygon points="1176.3,469.9 1176.3,464.3 1064,464.3 1069.6,469.9 		"/>
+	</g>
+	<g>
+		<polygon points="1176.3,480.9 1176.3,475.3 1075,475.3 1080.6,480.9 		"/>
+	</g>
+	<g>
+		<path fill="none" d="M1255,564V445.3c0-3.6-3.8-6.5-8.5-6.5h-144.8l-31.6,31.6l100.2,100.1h76.3C1251.2,570.5,1255,567.6,1255,564
+			z"/>
+		<path fill="#DFDFD5" d="M1246.5,431.8h-137.8l-7,7h144.8c4.7,0,8.5,2.9,8.5,6.5V564c0,3.6-3.8,6.5-8.5,6.5h-76.3l7,7h69.3
+			c8.5,0,15.5-6.1,15.5-13.5V445.3C1262,437.8,1255,431.8,1246.5,431.8z"/>
+	</g>
+	<g>
+		<polygon points="1176.3,603.7 1176.3,598.1 1044.3,598.1 1044.3,603.7 		"/>
+	</g>
+	<g>
+		<polygon points="1176.3,614.7 1176.3,609.1 1044.3,609.1 1044.3,614.7 		"/>
+	</g>
+	<g>
+		<polygon points="1163.1,625.7 1163.1,620.1 1044.3,620.1 1044.3,625.7 		"/>
+	</g>
+	<g>
+		<rect x="1168.6" y="618.9" transform="matrix(-0.7071 0.7071 -0.7071 -0.7071 2441.9663 234.2294)" width="7.8" height="7.9"/>
+	</g>
+	<circle cx="1060.6" cy="668.7" r="12"/>
+	<polygon fill="#FFFFFF" points="1059.8,678 1051,672.8 1053.6,668.3 1058.2,671 1065,660.3 1069.4,663.1 	"/>
+	<circle cx="1101.6" cy="668.7" r="12"/>
+	<circle cx="1142.6" cy="668.7" r="12"/>
+	<polygon fill="#FFFFFF" points="1141.8,678 1133,672.8 1135.6,668.3 1140.2,671 1147,660.3 1151.4,663.1 	"/>
+	<g>
+		<path fill="none" d="M1019,567V692c0,3.9,3.8,7,8.5,7h101.2l85-85l-54-54h-132.2C1022.8,560,1019,563.2,1019,567z"/>
+		<path fill="#DFDFD5" d="M1027.5,699c-4.7,0-8.5-3.2-8.5-7V567c0-3.9,3.8-7,8.5-7h132.2l-7-7h-125.2c-8.5,0-15.5,6.3-15.5,14V692
+			c0,7.7,7,14,15.5,14h94.2l7-7H1027.5z"/>
+	</g>
+	<g>
+		<path fill="none" d="M1076.5,821.7c0,5.2,2.5,9.2,4.8,9.2h124.9c2.3,0,4.8-3.9,4.8-9.2V671.8c0-5.2-2.5-9.1-4.8-9.1H1165
+			l-88.5,88.5V821.7z"/>
+		<path fill="#DFDFD5" d="M1206.2,655.7H1172l-7,7h41.2c2.3,0,4.8,3.9,4.8,9.1v149.9c0,5.2-2.5,9.2-4.8,9.2h-124.9
+			c-2.3,0-4.8-3.9-4.8-9.2v-70.6l-7,7v63.6c0,9.1,5.2,16.2,11.8,16.2h124.9c6.6,0,11.8-7.1,11.8-16.2V671.8
+			C1218,662.8,1212.8,655.7,1206.2,655.7z"/>
+	</g>
+	<g>
+		<path d="M1100,684.5c-0.1-0.3-0.3-0.5-0.3-0.8c0-0.6,0-1-0.5-1.4c-1.4-1.3-2.7-2.7-3.6-4.4c-0.6-1-1.4-2.1-2.2-3
+			c-0.8-1-0.6-2.3,0-3.1c0.9-0.9,2.1-1,3.2-0.3c0.5,0.4,0.9,0.6,1.4,1.2c-0.3-0.9-0.4-1.6-0.5-2.3c-0.3-1.4-0.6-3-0.9-4.4
+			c-0.1-0.5,0-1.2,0.1-1.7c0.3-1.6,2.5-1.8,3.1-0.9c0.5,0.8,1,1.6,1.3,2.5c0.3,0.9,0.4,1.7,0.6,2.5c0.6-0.1,1.3-0.4,2.1-0.4
+			c0.8,0,1.3,0.4,1.7,1c0.6-0.6,1.6-0.9,2.5-0.8c1,0.1,1.6,0.8,1.8,1.7c0.4-0.1,0.6-0.3,1-0.4c0.9-0.3,1.7,0.3,2.1,1
+			c0.1,0.3,0.3,0.5,0.3,0.9c0.1,1.9,0,3.7-0.4,5.6c-0.3,0.8-0.6,1.6-1.2,2.3c-0.5,0.8-1.3,1.4-1.4,2.5c0,0.4,0,0.9,0,1.4
+			c0.1,0.9,0.1,0.9-0.6,1.3c-0.5,0-0.9,0-1.4,0c-0.6-0.5-1.3-1-1.8-1.6c-0.5,0.5-1.2,1-1.7,1.6
+			C1103.1,684.5,1101.5,684.5,1100,684.5z M1109.2,683.5c0-0.1,0-0.3,0-0.4c-0.1-1.3,0.1-2.5,1-3.4c0.4-0.5,0.9-1,1.2-1.7
+			c1-2.1,0.9-4.4,0.8-6.7c0-0.3-0.4-0.6-0.6-0.6c-0.4-0.1-0.8,0.1-1,0.4c-0.1,0.1-0.1,0.4-0.3,0.5c-0.1,0.3-0.3,0.6-0.6,0.6
+			c-0.4,0-0.4-0.4-0.5-0.6c-0.1-0.5-0.1-1-0.4-1.6c-0.3-0.6-0.6-0.8-1.4-0.6c-0.6,0-0.9,0.3-1,0.9c0,0.4-0.1,0.9-0.3,1.3
+			c0,0.4-0.1,0.6-0.5,0.6s-0.5-0.3-0.5-0.6c-0.1-0.6-0.1-1.2-0.3-1.8c-0.3-0.6-0.8-0.9-1.6-0.8c-0.5,0.1-0.9,0.4-0.9,1.2
+			c0,0.4,0,0.9,0,1.4c0,0.4-0.1,0.6-0.5,0.6c-0.4,0-0.4-0.3-0.5-0.6c-0.3-1.6-0.5-3.1-0.9-4.7c-0.3-0.9-0.6-1.7-1-2.5
+			c-0.3-0.4-0.6-0.6-1.2-0.4c-0.5,0.1-0.6,0.4-0.6,0.9c0,0.4-0.1,0.9,0,1.4c0.3,1.3,0.6,2.6,0.9,3.9c0.3,1.4,0.5,2.8,0.9,4.3
+			c0,0.3,0,0.6-0.4,0.6c-0.3,0-0.5-0.1-0.6-0.3c-0.3-0.3-0.3-0.4-0.5-0.6c-0.6-0.8-1.3-1.7-2.2-2.1c-1-0.4-1.9,0.3-1.8,1.4
+			c0,0.3,0.3,0.6,0.4,0.9c0.8,1,1.6,1.9,2.2,3c0.9,1.4,1.9,2.8,3.1,3.9c0.6,0.6,1.3,1.3,1.2,2.3c0.9,0,1.8,0,2.7,0
+			c0.8,0,1.3-0.3,1.7-0.9c0.9-1.3,1.4-1.3,2.3,0C1107.9,683.4,1108.4,683.7,1109.2,683.5z"/>
+		<path fill="#FFFFFF" d="M1109.2,683.5c-0.9,0.3-1.3-0.1-1.7-0.8c-0.9-1.3-1.4-1.3-2.3,0c-0.4,0.6-0.9,0.9-1.7,0.9
+			c-0.9,0-1.8,0-2.7,0c0.1-1-0.4-1.7-1.2-2.3c-1.3-1-2.3-2.5-3.1-3.9c-0.6-1-1.4-1.9-2.2-3c-0.3-0.3-0.4-0.6-0.4-0.9
+			c-0.1-1,0.9-1.8,1.8-1.4c1,0.4,1.7,1.2,2.2,2.1c0.1,0.3,0.3,0.5,0.5,0.6s0.4,0.4,0.6,0.3c0.4,0,0.4-0.4,0.4-0.6
+			c-0.3-1.4-0.5-2.8-0.9-4.3c-0.3-1.3-0.6-2.6-0.9-3.9c-0.1-0.4,0-0.9,0-1.4c0-0.4,0.3-0.8,0.6-0.9c0.5-0.1,0.9,0,1.2,0.4
+			c0.4,0.8,0.9,1.7,1,2.5c0.4,1.6,0.6,3.1,0.9,4.7c0,0.4,0.1,0.6,0.5,0.6c0.4,0,0.5-0.4,0.5-0.6c0-0.4,0-0.9,0-1.4
+			c0-0.6,0.3-1,0.9-1.2c0.8-0.1,1.4,0.1,1.6,0.8c0.1,0.6,0.3,1.2,0.3,1.8c0,0.4,0.1,0.6,0.5,0.6c0.4,0,0.5-0.3,0.5-0.6
+			s0.1-0.9,0.3-1.3c0.1-0.6,0.4-0.9,1-0.9c0.8-0.1,1.3,0.1,1.4,0.6c0.1,0.5,0.3,1,0.4,1.6c0,0.3,0.1,0.6,0.5,0.6s0.5-0.3,0.6-0.6
+			c0-0.3,0.1-0.4,0.3-0.5c0.3-0.4,0.6-0.6,1-0.4c0.3,0.1,0.6,0.4,0.6,0.6c0.1,2.3,0.3,4.7-0.8,6.7c-0.3,0.6-0.8,1.2-1.2,1.7
+			c-0.9,1-1,2.2-1,3.4C1109.2,683.2,1109.2,683.4,1109.2,683.5z M1103.5,677.8L1103.5,677.8c0-0.8,0-1.4,0-2.2
+			c0-0.4-0.1-0.6-0.5-0.6c-0.4,0-0.5,0.3-0.5,0.6c0,1.4,0,3,0,4.4c0,0.4,0.1,0.6,0.5,0.6c0.4,0,0.5-0.3,0.5-0.6
+			C1103.5,679.2,1103.5,678.4,1103.5,677.8z M1105.1,677.7L1105.1,677.7c0,0.8,0,1.6,0,2.3c0,0.4,0.3,0.6,0.5,0.5
+			c0.3,0,0.4-0.4,0.4-0.5c0-1.6,0-3.1,0-4.5c0-0.4-0.1-0.6-0.5-0.5c-0.4,0-0.5,0.3-0.5,0.6C1105.1,676.1,1105.1,676.9,1105.1,677.7z
+			 M1108.9,677.8L1108.9,677.8c0-0.8,0-1.6,0-2.3c0-0.4-0.1-0.6-0.5-0.6c-0.4,0-0.5,0.3-0.5,0.6c0,1.4,0,3,0,4.5
+			c0,0.4,0.1,0.6,0.5,0.5c0.4,0,0.5-0.3,0.5-0.6C1108.9,679.2,1108.9,678.4,1108.9,677.8z"/>
+		<path d="M1103.5,677.8c0,0.6,0,1.4,0,2.1c0,0.4-0.1,0.6-0.5,0.6c-0.4,0-0.5-0.3-0.5-0.6c0-1.4,0-3,0-4.4c0-0.4,0.1-0.6,0.5-0.6
+			c0.4,0,0.5,0.3,0.5,0.6C1103.5,676.2,1103.5,677,1103.5,677.8L1103.5,677.8z"/>
+		<path d="M1105.1,677.7c0-0.8,0-1.4,0-2.2c0-0.4,0.1-0.6,0.5-0.6s0.5,0.3,0.5,0.5c0,1.6,0,3.1,0,4.5c0,0.3-0.3,0.5-0.4,0.5
+			c-0.4,0-0.5-0.3-0.5-0.5C1105.1,679.2,1105.1,678.4,1105.1,677.7L1105.1,677.7z"/>
+		<path d="M1108.9,677.8c0,0.8,0,1.4,0,2.2c0,0.4-0.1,0.6-0.5,0.6c-0.4,0-0.5-0.3-0.5-0.5c0-1.4,0-3,0-4.5c0-0.4,0.1-0.6,0.5-0.6
+			c0.4,0,0.5,0.3,0.5,0.6C1108.9,676.2,1108.9,677,1108.9,677.8L1108.9,677.8z"/>
+	</g>
+	<path fill="#FFFFFF" d="M1167.7,698.2c0,3.7,3.1,6.9,6.9,6.9h12c3.7,0,6.9-3.1,6.9-6.9v-12c0-3.7-3.1-6.9-6.9-6.9h-12
+		c-3.7,0-6.9,3.1-6.9,6.9V698.2z"/>
+	<path fill="#333333" d="M1167.7,733.7c0,3.7,3.1,6.9,6.9,6.9h12c3.7,0,6.9-3.1,6.9-6.9v-12c0-3.7-3.1-6.9-6.9-6.9h-12
+		c-3.7,0-6.9,3.1-6.9,6.9V733.7z"/>
+	<path fill="#333333" d="M1131.8,733.7c0,3.7,3.1,6.9,6.9,6.9h12c3.7,0,6.9-3.1,6.9-6.9v-12c0-3.7-3.1-6.9-6.9-6.9h-12
+		c-3.7,0-6.9,3.1-6.9,6.9V733.7z"/>
+	<path fill="#333333" d="M1167.7,770.2c0,3.7,3.1,6.9,6.9,6.9h12c3.7,0,6.9-3.1,6.9-6.9v-12c0-3.7-3.1-6.9-6.9-6.9h-12
+		c-3.7,0-6.9,3.1-6.9,6.9V770.2z"/>
+	<path fill="#333333" d="M1131.8,770.2c0,3.7,3.1,6.9,6.9,6.9h12c3.7,0,6.9-3.1,6.9-6.9v-12c0-3.7-3.1-6.9-6.9-6.9h-12
+		c-3.7,0-6.9,3.1-6.9,6.9V770.2z"/>
+	<path fill="#333333" d="M1096.1,770.2c0,3.7,3.1,6.9,6.9,6.9h12c3.7,0,6.9-3.1,6.9-6.9v-12c0-3.7-3.1-6.9-6.9-6.9h-12
+		c-3.7,0-6.9,3.1-6.9,6.9V770.2z"/>
+	<g>
+		<path fill="#333333" d="M1150.7,679.3h-2.3l-16.6,16.6v2.3c0,3.7,3.1,6.9,6.9,6.9h12c3.7,0,6.9-3.1,6.9-6.9v-12
+			C1157.6,682.5,1154.4,679.3,1150.7,679.3z"/>
+	</g>
+	<g>
+		<path fill="#333333" d="M1115,714.8h-2.2l-16.7,16.7v2.2c0,3.7,3.1,6.9,6.9,6.9h12c3.7,0,6.9-3.1,6.9-6.9v-12
+			C1121.9,718,1118.8,714.8,1115,714.8z"/>
+	</g>
+	<path d="M1231.4,693.2c-0.3,0.3-0.6,0.4-1,0.4h-48.7c-0.9,0-1.4-0.6-1.4-1.4c0-0.9,0.6-1.4,1.4-1.4h48.7c0.9,0,1.4,0.6,1.4,1.4
+		C1231.8,692.6,1231.6,693,1231.4,693.2z"/>
+	<g>
+		<polygon points="1041.6,434 1041.6,440.8 1070.6,469.9 1106.5,434 		"/>
+	</g>
+	<g>
+		<path fill="#DFDFD5" d="M1052.5,311.3h176.7l6.7-6.7c-1-0.2-1.9-0.3-3-0.3h-180.5c-8.5,0-15.5,7-15.5,15.5v116.4l7,7V319.8
+			C1044,315.1,1047.8,311.3,1052.5,311.3z"/>
+	</g>
+	<path d="M1126.5,414.2h-5.9c-0.6,0-1-0.4-1-1s0.4-1,1-1h5.9c0.6,0,1,0.4,1,1S1127.1,414.2,1126.5,414.2z M1114.7,414.2h-5.9
+		c-0.6,0-1-0.4-1-1s0.4-1,1-1h5.9c0.6,0,1,0.4,1,1S1115.3,414.2,1114.7,414.2z M1102.9,414.2h-5.9c-0.6,0-1-0.4-1-1s0.4-1,1-1h5.9
+		c0.6,0,1,0.4,1,1S1103.4,414.2,1102.9,414.2z M1091,414.2h-5.9c-0.6,0-1-0.4-1-1s0.4-1,1-1h5.9c0.6,0,1,0.4,1,1
+		S1091.6,414.2,1091,414.2z M1079.2,414.2h-5.9c-0.6,0-1-0.4-1-1s0.4-1,1-1h5.9c0.6,0,1,0.4,1,1S1079.8,414.2,1079.2,414.2z
+		 M1067.4,414.2h-0.3c-2.1,0-4.1-0.6-5.8-1.7c-0.5-0.3-0.6-0.9-0.3-1.4c0.3-0.5,0.9-0.6,1.4-0.3c1.4,0.9,3.1,1.4,4.8,1.4h0.3
+		c0.6,0,1,0.4,1,1S1067.9,414.2,1067.4,414.2z M1058,408.2c-0.4,0-0.8-0.2-0.9-0.6c-0.6-1.3-0.9-2.8-0.9-4.2v-2c0-0.6,0.4-1,1-1
+		s1,0.4,1,1v2c0,1.2,0.2,2.4,0.7,3.4c0.2,0.5,0,1.1-0.5,1.3C1058.3,408.1,1058.1,408.2,1058,408.2z M1057.2,396.4c-0.6,0-1-0.4-1-1
+		v-5.9c0-0.6,0.4-1,1-1s1,0.4,1,1v5.9C1058.2,396,1057.8,396.4,1057.2,396.4z M1057.2,384.6c-0.6,0-1-0.4-1-1v0
+		c0-2.2,0.7-4.3,1.9-6.1c0.3-0.5,0.9-0.6,1.4-0.3c0.5,0.3,0.6,0.9,0.3,1.4c-1,1.5-1.5,3.2-1.5,5
+		C1058.2,384.1,1057.8,384.6,1057.2,384.6z M1063.5,375.4c-0.4,0-0.8-0.2-0.9-0.6c-0.2-0.5,0.1-1.1,0.6-1.3c1.2-0.5,2.6-0.7,3.9-0.7
+		h2.3c0.6,0,1,0.4,1,1s-0.4,1-1,1h-2.3c-1.1,0-2.2,0.2-3.2,0.6C1063.7,375.4,1063.6,375.4,1063.5,375.4z M1164,374.7h-5.9
+		c-0.6,0-1-0.4-1-1s0.4-1,1-1h5.9c0.6,0,1,0.4,1,1S1164.6,374.7,1164,374.7z M1152.2,374.7h-5.9c-0.6,0-1-0.4-1-1s0.4-1,1-1h5.9
+		c0.6,0,1,0.4,1,1S1152.7,374.7,1152.2,374.7z M1140.3,374.7h-5.9c-0.6,0-1-0.4-1-1s0.4-1,1-1h5.9c0.6,0,1,0.4,1,1
+		S1140.9,374.7,1140.3,374.7z M1128.5,374.7h-5.9c-0.6,0-1-0.4-1-1s0.4-1,1-1h5.9c0.6,0,1,0.4,1,1S1129.1,374.7,1128.5,374.7z
+		 M1116.7,374.7h-5.9c-0.6,0-1-0.4-1-1s0.4-1,1-1h5.9c0.6,0,1,0.4,1,1S1117.2,374.7,1116.7,374.7z M1104.8,374.7h-5.9
+		c-0.6,0-1-0.4-1-1s0.4-1,1-1h5.9c0.6,0,1,0.4,1,1S1105.4,374.7,1104.8,374.7z M1093,374.7h-5.9c-0.6,0-1-0.4-1-1s0.4-1,1-1h5.9
+		c0.6,0,1,0.4,1,1S1093.6,374.7,1093,374.7z M1081.2,374.7h-5.9c-0.6,0-1-0.4-1-1s0.4-1,1-1h5.9c0.6,0,1,0.4,1,1
+		S1081.7,374.7,1081.2,374.7z"/>
+	<rect x="1074.2" y="382" width="8" height="22.9"/>
+	<rect x="1066.8" y="389.4" width="22.9" height="8"/>
+	<path d="M1213.7,446.1c-4.7,0-9.2,3.1-9.2,9.7c0,7,9.2,22.4,9.2,22.4s9-15.4,9-23C1222.9,449.5,1218.4,446.1,1213.7,446.1z
+		 M1213.9,459.1c-2.3,0-4.1-1.8-4.1-4.1c0-2.3,1.8-4.1,4.1-4.1s4.1,1.8,4.1,4.1C1218,457.3,1216.2,459.1,1213.9,459.1z"/>
+	<polygon fill="#FFFFFF" points="1176.3,550.5 1176.3,508.2 1197.4,529.4 	"/>
+</g>
+<g id="text_1_">
+	<text transform="matrix(1 0 0 1 1129.3578 651.7476)" fill="#DFDFD5" class="svg-proxima" font-size="10">Kindle</text>
+	<text transform="matrix(1 0 0 1 1089.0676 651.7476)" fill="#DFDFD5" class="svg-proxima" font-size="10">iBook</text>
+	<text transform="matrix(1 0 0 1 1051.8275 651.7476)" fill="#DFDFD5" class="svg-proxima" font-size="10">Web</text>
+	<text transform="matrix(1 0 0 1 1237.0403 695.3201)" enable-background="new    "><tspan x="0" y="0" class="svg-proxima" font-size="10">Your  </tspan><tspan x="3.4" y="12" class="svg-proxima" font-size="10">app</tspan></text>
+	<text transform="matrix(1 0 0 1 1095.1478 395.3888)" fill="#DFDFD5" class="svg-proxima" font-size="10">New Story</text>
+	<text transform="matrix(1 0 0 1 1066.7832 288.8687)" fill="#010101" class="svg-mercury" font-size="20">1. Start a project</text>
+	<text transform="matrix(1 0 0 1 1170.5417 400.049)" enable-background="new    "><tspan x="0" y="0" fill="#010101" class="svg-mercury" font-size="20">2. Design it  </tspan><tspan x="-24" y="20" fill="#010101" class="svg-mercury" font-size="20">how you want</tspan></text>
+	<text transform="matrix(1 0 0 1 998 523.3557)" enable-background="new    "><tspan x="0" y="0" fill="#010101" class="svg-mercury" font-size="20">3. Publish </tspan><tspan x="0" y="20" fill="#010101" class="svg-mercury" font-size="20">anywhere</tspan></text>
+	<text transform="matrix(1 0 0 1 1044.6432 868.1078)" fill="#010101" class="svg-mercury" font-size="20">4. Even launch an app</text>
+</g>
+<g id="bars">
+	<g id="bars_2_">
+		<path fill="#CA2027" d="M1039.1,500c0-0.4,0.1-0.8,0.4-1l195.8-195.8c0.6-0.6,1.6-0.6,2.1,0c0.6,0.6,0.6,1.6,0,2.1L1041.6,501
+			c-0.6,0.6-1.6,0.6-2.1,0C1039.3,500.7,1039.1,500.4,1039.1,500z"/>
+		<path fill="#CA2027" d="M1028.9,797.4c0-0.4,0.1-0.8,0.4-1l206.1-206.1c0.6-0.6,1.6-0.6,2.1,0c0.6,0.6,0.6,1.6,0,2.1l-206.1,206.1
+			c-0.6,0.6-1.6,0.6-2.1,0C1029,798.2,1028.9,797.8,1028.9,797.4z"/>
+		<path fill="#CA2027" d="M1030.3,429.1c0.4,0,0.8,0.1,1,0.4l206.1,206.1c0.6,0.6,0.6,1.6,0,2.1c-0.6,0.6-1.6,0.6-2.1,0l-206.1-206
+			c-0.6-0.6-0.6-1.6,0-2.1C1029.5,429.2,1029.9,429.1,1030.3,429.1z"/>
+	</g>
+</g>
+</svg>
+
+		</section>
+		<section id="about-us">
+			<div id="about-us-image">
+				
+			</div>
+			<div id="about-us-text">
+				<h3>Our Story</h3>
+				<div id="about-us-container" class="primary-text collapse">
+				<p>We’re not just a software company. We started as journalists, writers, editors, designers, coders, and of course, fervent readers. We had ideas about what we wanted to create, but we weren’t going to wait for the publishing world to catch up to us. We built Creatavist to publish our own labor of love – <a href="https://www.atavist.com/" target="_blank">The Atavist</a>, a digital magazine featuring award-winning original pieces of longform, nonfiction journalism. But Creatavist is not a tool just for us. We built it so that any individual or group could craft and publish amazing stories. The Creatavist community includes renowned writers like Karen Russell and Joshuah Bearman, established publishers like <em>The Paris Review,</em> TED, the Weather Channel, student magazines, artists, photographers, and more. We think you should be a part of it.</p> 
+				<p>Creatavist is proud to be backed by IAC, Innovation Endeavors, Founders Fund, Andreesen Horowitz, the Knight Foundation, and a group of experienced angel investors. </p>
+				</div>
+				<p class="toggle"><button class="button" id="about-us-toggle" data-toggle="collapse" data-target=".primary-text">Read More</button></p>
+			</div>
+		</section>
+		<section id="contact">
+			<div id="discover" class="header-styles">
+				<h4>Discover and read</h4>
+				<p>See what the Creatavist community is publishing to our app.</p>
+				<p>
+					<a href="https://itunes.apple.com/us/app/creatavist/id550642886" target="_blank"><img src="//atavist-static.s3.amazonaws.com/images/homepage/app-store-button.svg" alt="Creatavist on the App Store"></a>
+				</p>
+			</div>
+			<div id="newsletter">
+				<h4>Keep updated</h4>
+				<p id="mailchimp-text">Be in the know about the latest stories, features, and events!</p>
+				<form id="mailchimp" class="step-1" action="https://creatavist.us2.list-manage.com/subscribe/post" method="POST">
+					<input type="hidden" name="u" value="2208236e9bd41d9e37d2fd700">
+					<input type="hidden" name="id" value="8d16307e73">
+					<input id="mailchimp-email" name="MERGE0" type="email" placeholder="Enter your email">
+					<button class="button cta">Sign up</button>
+				</form>	
+			</div>
+		</section>
+		<footer>
+			<ul>
+				<li>Creatavist | <a href="/tos" target="_blank">Terms of Service</a></li>
+				<li>Copyright 2014</li>
+			</ul>
+		</footer>		<script src="/static/js/jquery-2.1.0.min.js"></script>
+		<script src="/static/js/bootstrap.min.js"></script>
+		<script src="/static/js/homepage.js"></script>
+		<script type="text/javascript">
+		  var _gaq = _gaq || [];
+		  _gaq.push(['_setAccount', 'UA-40296216-1']);
+		  if (document.cookie.indexOf("periodicSession") > 0) {
+			  _gaq.push(['_setCustomVar', 1, "Logged In", "true", 3]);
+		  } else {
+			  _gaq.push(['_setCustomVar', 1, "Anonymous", "true", 3]);
+		  }
+		  _gaq.push(['_setCustomVar', 2, "Home pages", "true", 3]);
+		  _gaq.push(['_trackPageview']);
+		  (function() {
+		    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		  })();
+		</script>
+	</body>
+</html>
