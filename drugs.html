@@ -13,8 +13,9 @@
     margin-bottom:20px;
     padding-bottom:20px;
   }
-  img { 
-    display: inline-block;
+  
+  .selected {
+    opacity:.5;
   }
 
 </style>
@@ -23,7 +24,7 @@
 <body>
   <h1>Starter interactive</h1>
   <p id="total">Total dose</p>
-  <img data-dose="2000" src="drug labels/alkaseltzer.jpg" alt="alternative text">
+  <img class="selected"data-dose="2000" src="drug labels/alkaseltzer.jpg" alt="alternative text">
   <img data-dose="4000" src="drug labels/anacin.jpg" alt="alternative text"></img>
   <img data-dose="800" src="drug labels/childrenstylenol.jpg" alt="alternative text"></img>
   <img data-dose="2900" src="drug labels/coricidin.jpg" alt="alternative text"></img>
@@ -45,8 +46,8 @@
   <img data-dose="3900" src="drug labels/zicam.jpg" alt="alternative text"></img>
 
 <script src="jquery-2.1.1.min.js"></script>
-
 <script type="text/javascript">
+
 var total=0;
 console.log("hi")
 $( "img" ).click(function() {
