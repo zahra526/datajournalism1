@@ -23,7 +23,10 @@
 </head>
 
 <body>
-  <h1>Starter interactive</h1>
+  <h1>How Much Acetaminophen Are You Taking?</h1>
+  <p>Many common over-the-counter drugs contain acetaminophen. Taking more than one at the same time increases your chance of "double-dipping" - acidentally overdosing. Use this tool to find out which of the drugs in your medicine cabinet contains acetaminophen - and how much. This is not meant to be medical advice. Toxic levels vary by individual. Call your doctor if you think you've overdosed, even if you don't show medical symptoms.</p>
+  <p><h4>Combining the daily maximum dose of common drugs can lead to an overdose.</h2></p>
+
   <p id="total">Total dose</p>
   <img data-dose="2000" src="druglabels/excedrin.jpg" alt="alternative text"></img>
   <img data-dose="2600" src="druglabels/nyquil.jpg" alt="alternative text"></img>
@@ -52,25 +55,49 @@
 <script src="jquery-2.1.1.min.js"></script>
 <script type="text/javascript">
 var total=0;
-console.log("hi")
+
 $( "img" ).click(function() {
- var drug=+$(this).attr("data-dose");
- total+=drug;
-$("#total").html(total)
-})
 
-$(document).ready(function() {
-    $("img").click(function() {  
-            $(this).toggleClass('active');
+  // this is the dosage of the thing i just clicked
+   var drug=+$(this).attr("data-dose");
 
-        if($(this).hasClass('active')){
-            $(this).removeClass('active');
-  
-        }else
-            $(this).addClass('active');
-   });
-   
+
+
+   // if you ARE active... do something
+  if($(this).hasClass('active')){
+    total-=drug;
+  }
+  // if not...do something else
+  else {
+     total+=drug;
+
+   // add this dosage to the total.
+
+  }
+
+
+   // if over 4000...do something
+  if($(this).hasClass('active')){
+    total-=drug;
+
+  }
+  // if not over 4000...do something else
+  else {
+     total+=drug;
+
+   // add this dosage to the total.
+
+  }
+
+
+  // toggle your class
+  $(this).toggleClass('active');
+
+   // 
+  $("#total").html(total)
+
 });
+
 
 
 
