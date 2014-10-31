@@ -13,7 +13,12 @@
     margin-bottom:20px;
     padding-bottom:20px;
   }
-
+p {
+    font-family: Georgia;
+    font-size: 12px;
+    border-bottom:1px solid #dedede;
+    padding-bottom:5px;
+  }
   .active {
     opacity:.5;
   }
@@ -25,9 +30,11 @@
 <body>
   <h1>How Much Acetaminophen Are You Taking?</h1>
   <p>Many common over-the-counter drugs contain acetaminophen. Taking more than one at the same time increases your chance of "double-dipping" - acidentally overdosing. Use this tool to find out which of the drugs in your medicine cabinet contains acetaminophen - and how much. This is not meant to be medical advice. Toxic levels vary by individual. Call your doctor if you think you've overdosed, even if you don't show medical symptoms.</p>
-  <p><h4>Combining the daily maximum dose of common drugs can lead to an overdose.</h2></p>
+  <p><h4>Combining the daily maximum dose of common drugs can lead to an overdose:</h2></p>
 
   <p id="total">Total dose</p>
+  <p id="warning"></p>
+  
   <img data-dose="2000" src="druglabels/excedrin.jpg" alt="alternative text"></img>
   <img data-dose="2600" src="druglabels/nyquil.jpg" alt="alternative text"></img>
   <img data-dose="3840" src="druglabels/robitussin.jpg" alt="alternative text"></img>
@@ -75,26 +82,16 @@ $( "img" ).click(function() {
 
   }
 
-
-   // if over 4000...do something
-  if($(this).hasClass('active')){
-    total-=drug;
-
-  }
-  // if not over 4000...do something else
-  else {
-     total+=drug;
-
-   // add this dosage to the total.
-
-  }
-
-
-  // toggle your class
+// toggle your class
   $(this).toggleClass('active');
+$("#total").html(total)
 
-   // 
-  $("#total").html(total)
+  if(total>4000) {
+    $("#warning").html("You've exceeded the maximum daily dose!")
+  }
+  else {
+    $("#warning").html("")
+  }
 
 });
 
