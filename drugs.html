@@ -20,12 +20,17 @@ p {
     font-size: 16px;
     letter-spacing: -1px;
     border-bottom:1px solid #dedede;
+    margin-bottom:20px;
   }
 
 h4 {
     font-family: Helvetica;
     letter-spacing: -.5px;
     border-bottom:1px solid #dedede;
+}
+
+div {
+
 }
 
 img {
@@ -35,13 +40,7 @@ img {
   .active {
     opacity:.5;
   }
-
-div {
-    margin-left: 50px auto;
-    margin-right: 50px auto;
-  }
   
-
   
 </style>
 </head>
@@ -96,20 +95,18 @@ var total=0;
 
 $( "img" ).click(function() {
 
-  // this is the dosage of the thing i just clicked
+  // This is the dosage of the medicine I just clicked.
    var drug=+$(this).attr("data-dose");
 
-
-
-   // if you ARE active... do something
+  // If the medicine is active (because I clicked on it), show opacity.
   if($(this).hasClass('active')){
     total-=drug;
   }
-  // if not...do something else
+  //If the medicine is not active (because I haven't clicked on it), show image unchanged.
   else {
      total+=drug;
 
-   // add this dosage to the total.
+   //Add the other medicine's dosage to what's clicked to show a total sum of acetaminophens.
 
   }
 
