@@ -28,7 +28,7 @@
     }
 </style>
 <div id='map'></div>
-<script type="text/javascript" src="http://leafletjs.com/examples/us-states.js"></script>
+<script type="text/javascript" src="updated-data-guns.js"></script>
 <script type='text/javascript'>
     // Based on the Leaflet example from http://leafletjs.com/examples/choropleth.html
 
@@ -50,21 +50,24 @@
             opacity: 0.1,
             color: 'black',
             fillOpacity: 0.7,
-            fillColor: getColor(feature.properties.density)
+            fillColor: getColor(feature.properties.guns)
         };
     }
 
-    // get color depending on population density value
+    // get color depending on gun density value
     function getColor(d) {
-        return d > 1000 ? '#8c2d04' :
-            d > 500  ? '#cc4c02' :
-            d > 200  ? '#ec7014' :
-            d > 100  ? '#fe9929' :
-            d > 50   ? '#fec44f' :
-            d > 20   ? '#fee391' :
-            d > 10   ? '#fff7bc' :
-            '#ffffe5';
+        return d > 20000 ? '#8c2d04' :
+            d > 10000  ? '#cc4c02' :
+            d > 5000  ? '#ec7014' :
+            d > 1000  ? '#fe9929' :
+            d > 500   ? '#fec44f' :
+            d > 100  ? '#fee391' :
+            d > 50   ? '#fff7bc' :
+            d > 10   ? '#fffde3' :
+            d > 0   ? '#fffefb' :
+            '#fffe5';
     }
+
 
     function onEachFeature(feature, layer) {
         layer.on({
@@ -81,7 +84,7 @@
 
         popup.setLatLng(e.latlng);
         popup.setContent('<h2>' + layer.feature.properties.name + '</h2>' +
-            layer.feature.properties.density + ' people per square mile');
+            layer.feature.properties.guns + ' guns');
 
         if (!popup._map) popup.openOn(map);
         window.clearTimeout(closeTooltip);
@@ -110,7 +113,7 @@
     }
 
     function getLegendHTML() {
-        var grades = [0, 10, 20, 50, 100, 200, 500, 1000],
+        var grades = [0, 10, 50, 100, 500, 1000, 5000, 10000, 20000],
             labels = [],
             from, to;
 
@@ -123,7 +126,7 @@
                 from + (to ? '&ndash;' + to : '+'));
         }
 
-        return '<span>People per square mile</span><br>' + labels.join('<br>');
+        return '<span>guns</span><br>' + labels.join('<br>');
     }
 </script>
 </body>
