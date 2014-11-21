@@ -5,6 +5,10 @@
 
 <style type="text/css">
 
+svg {
+  border:1px solid #f0f;
+}
+
 body {
   font-family: "Exo 2", sans-serif;
   color: #333;
@@ -66,14 +70,17 @@ svg {
 }
 </style>
 
+<h1>Hello, world!</h1>
+
+
 
 
 <script src="http://d3js.org/d3.v3.min.js"></script>
 <script	type="text/javascript">
 
 var data = [
-  ["Franklin D. Roosevelt",3522],
-  ["Herbert Hoover",968], 
+  ["Franklin D. Roosevelt", 3522],
+  ["Herbert Hoover", 968],
   ["Woodrow Wilson", 1803], 
   ["Warren G. Harding", 522],
   ["Calvin Coolidge", 1203],
@@ -85,7 +92,7 @@ var data = [
   ["Gerald R. Ford", 169],
   ["Lyndon B. Johnson", 325],
   ["Richard Nixon", 346],
-  ["Dwight D. Eisenhower", 484
+  ["Dwight D. Eisenhower", 484],
   ["Ronald Reagan", 381],
   ["William J. Clinton", 364],
   ["George H.W. Bush", 166],
@@ -114,8 +121,9 @@ max = d3.max(data.map(function(i){
 svg = d3.select(chart)
   .append("svg")
   .attr("width", width)
-  .attr("height", 400);
+  .attr("height", 700);
 
+console.log(data);
 
 bar = svg.selectAll("g")
   .data(data)
