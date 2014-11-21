@@ -1,0 +1,135 @@
+<html>
+<head>
+<style type="text/css">
+
+body {
+    font-family: Helvetica;
+    width:760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1 {
+    font-family: Helvetica;
+    letter-spacing: -1px;
+    border-bottom:1px solid #dedede;
+    margin-bottom:20px;
+    padding-bottom:20px;
+  }
+
+p {
+    font-family: Georgia;
+    font-size: 16px;
+    letter-spacing: -1px;
+    margin-bottom:20px;
+  }
+
+h4 {
+    font-family: Helvetica;
+    letter-spacing: -.3px;
+}
+
+div {
+    margin-right: 60px;
+    margin-left: 68px;
+    margin-bottom: 0px
+}
+
+img {
+    border-radius: 5px;
+}
+
+  .active {
+    opacity:.5;
+  }
+  
+  
+</style>
+</head>
+
+<body>
+  <h1>How Much Acetaminophen Are You Taking?</h1>
+  
+  <p id=>Many common over-the-counter drugs contain acetaminophen. Taking more than one at the same time increases your chance of "double-dipping" &mdash; acidentally overdosing. Use this tool to find out which of the drugs in your medicine cabinet contains acetaminophen &mdash; and how much. &#40;This is not meant to be medical advice. Toxic levels vary by individual. Call your doctor if you think you've overdosed, even if you don't show medical symptoms.&#41;</p>
+  
+  <p><h4>Combining the daily maximum dose of common drugs can lead to an overdose:</h4></p>
+
+  <p id="total">TOTAL DOSE</p>
+  <p id="warning"></p>
+  
+<div>
+  <img data-dose="3522" src="prez/FDR.jpg" alt="alternative text"></img>
+  <img data-dose="2600" src="druglabels/nyquil.jpg" alt="alternative text"></img>
+  <img data-dose="3840" src="druglabels/robitussin.jpg" alt="alternative text"></img>
+  <img data-dose="3250" src="druglabels/sudafed.jpg" alt="alternative text"></img>
+  <img data-dose="2000" src="druglabels/alkaseltzer.jpg" alt="alternative text"></img>
+</div>
+
+<div>
+  <img data-dose="3900" src="druglabels/theraflu.jpg" alt="alternative text"></img>
+  <img data-dose="3000" src="druglabels/tylenolextrastrngth.jpg" alt="alternative text"></img>
+  <img data-dose="3900" src="druglabels/zicam.jpg" alt="alternative text"></img>
+  <img data-dose="4000" src="druglabels/anacin.jpg" alt="alternative text"></img>
+  <img data-dose="800" src="druglabels/childrenstylenol.jpg" alt="alternative text"></img>
+</div>  
+  
+<div>
+  <img data-dose="800" src="druglabels/dimetapp.jpg" alt="alternative text"></img>
+  <img data-dose="800" src="druglabels/panadol.jpg" alt="alternative text"></img>
+  <img data-dose="1300" src="druglabels/dayquil.jpg" alt="alternative text"></img>
+  <img data-dose="2900" src="druglabels/coricidin.jpg" alt="alternative text"></img>
+  <img data-dose="4000" src="druglabels/tylenolwcodeine.jpg" alt="alternative text"></img>
+</div>   
+
+<div>
+  <img data-dose="3960" src="druglabels/vicodin.jpg" alt="alternative text"></img>
+  <img data-dose="3900" src="druglabels/percoset.jpg" alt="alternative text"></img>
+  <img data-dose="3900" src="druglabels/hydrocodone.jpg" alt="alternative text"></img>
+  <img data-dose="3900" src="druglabels/oxycodone.jpg" alt="alternative text"></img>
+  <img data-dose="2600" src="druglabels/ultracet.jpg" alt="alternative text"></img>
+</div>   
+
+  
+
+<script src="jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+var total=0;
+
+$( "img" ).click(function() {
+
+  // This is the dosage of the medicine I just clicked.
+   var drug=+$(this).attr("data-dose");
+
+  // If the medicine is active (because I clicked on it), show opacity.
+  if($(this).hasClass('active')){
+    total-=drug;
+  }
+  //If the medicine is not active (because I haven't clicked on it), show image unchanged.
+  else {
+     total+=drug;
+
+   //Add the other medicine's dosage to what's clicked to show a total sum of acetaminophens.
+
+  }
+
+// toggle your class
+  $(this).toggleClass('active');
+$("#total").html(total)
+
+  if(total>4000) {
+    $("#warning").html("You've exceeded the maximum daily dose!")
+  }
+  else {
+    $("#warning").html("")
+  }
+
+});
+
+
+
+
+</script>
+
+
+</body>
+</html>
