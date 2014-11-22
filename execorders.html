@@ -1,0 +1,138 @@
+<html>
+<head>
+<style type="text/css">
+
+body {
+    font-family: Helvetica;
+    width:760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1 {
+    font-family: Helvetica;
+    font-weight: 100;
+    letter-spacing: -1px;
+    border-bottom:1px solid #dedede;
+    margin-bottom:20px;
+    padding-bottom:20px;
+  }
+
+p {
+    font-family: Helvetica;
+    font-weight: 100;
+    font-size: 16px;
+    margin-bottom:20px;
+  }
+
+h4 {
+    font-family: Helvetica;
+    letter-spacing: -.3px;
+}
+
+div {
+    margin-right: 60px;
+    margin-left: 68px;
+    margin-bottom: 0px
+}
+
+img {
+    border-radius: 50px;
+    opacity: .5;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+img:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /* For IE8 and earlier */
+}
+
+  .active {
+    opacity: 1.0;
+    filter: alpha(opacity=100);
+  }
+  
+  
+</style>
+</head>
+
+<body>
+  <h1>I'VE GOT THE (EXECUTIVE) POWER!</h1>
+  
+  <p id>Before President Obama used his executive authority to lay out a plan for immigration reform on November 20, many opponents charged that this is behavior similar to a king or a monarch. However, many fail to realize that Obama has actually used executive orders significantly less than past presidents.</p>
+
+  <p id="total">Click on a president to see how many executive orders he gave out during his time in office.</p>
+  <p id="warning"></p>
+  
+<div>
+  <img data-dose="3522" src="prez/FDR.jpg" alt="alternative text"></img>
+  <img data-dose="968" src="prez/Hoover.jpg" alt="alternative text"></img>
+  <img data-dose="1803" src="prez/Wilson.jpg" alt="alternative text"></img>
+  <img data-dose="522" src="prez/Harding.jpg" alt="alternative text"></img>
+  <img data-dose="1203" src="prez/Coolidge.jpg" alt="alternative text"></img>
+  <img data-dose="724" src="prez/Taft.jpg" alt="alternative text"></img>
+  <img data-dose="1081" src="prez/TR.jpg" alt="alternative text"></img>
+  <img data-dose="907" src="prez/Truman.jpg" alt="alternative text"></img>
+  <img data-dose="320" src="prez/Carter.jpg" alt="alternative text"></img>
+  <img data-dose="214" src="prez/JFK.png" alt="alternative text"></img>
+  <img data-dose="169" src="prez/Ford.jpg" alt="alternative text"></img>
+</div>
+  
+<div>
+  <img data-dose="325" src="prez/LBJ.jpg" alt="alternative text"></img>
+  <img data-dose="346" src="prez/Nixon.jpg" alt="alternative text"></img>
+  <img data-dose="381" src="prez/Eisenhower.jpg" alt="alternative text"></img>
+  <img data-dose="364" src="prez/Reagan.jpg" alt="alternative text"></img>
+  <img data-dose="364" src="prez/Clinton.jpg" alt="alternative text"></img>
+  <img data-dose="166" src="prez/Bush1.jpg" alt="alternative text"></img>
+  <img data-dose="185" src="prez/McKinley.jpg" alt="alternative text"></img>
+  <img data-dose="291" src="prez/Bush2.jpg" alt="alternative text"></img>
+  <img data-dose="143" src="prez/Harrison.jpg" alt="alternative text"></img>
+  <img data-dose="140" src="prez/Cleveland.jpg" alt="alternative text"></img>
+  <img data-dose="183" src="prez/Obama.jpg" alt="alternative text"></img>
+</div> 
+
+  
+
+<script src="jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+var total=0;
+
+$( "img" ).click(function() {
+
+  // This is the EO total of the president I just clicked.
+   var drug=+$(this).attr("data-dose");
+
+  // If the president is active (because I clicked on him), show opacity.
+  if($(this).hasClass('active')){
+    total-=drug;
+  }
+  //If the president is not active (because I haven't clicked on him), show image unchanged.
+  else {
+     total+=drug;
+
+   //Add the other president's EO total to that of the president clicked to show a total sum of EOs.
+
+  }
+
+// toggle your class
+  $(this).toggleClass('active');
+$("#total").html(total)
+
+  if(total>183) {
+    $("#warning").html("You've given out more executive orders than President Barack Obama! (183)")
+  }
+  else {
+    $("#warning").html("")
+  }
+
+});
+
+
+
+
+</script>
+
+
+</body>
+</html>
