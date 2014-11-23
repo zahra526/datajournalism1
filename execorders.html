@@ -39,18 +39,21 @@ div {
 img {
     border-radius: 50px;
     opacity: .5;
-    filter: alpha(opacity=40); /* For IE8 and earlier */
 }
 
 img:hover {
     opacity: 1.0;
-    filter: alpha(opacity=100); /* For IE8 and earlier */
 }
 
   .active {
     opacity: 1.0;
-    filter: alpha(opacity=100);
   }
+
+<div id="container">
+  <button id="play">
+    Play Music
+  </button>
+</div>
   
   
 </style>
@@ -120,13 +123,24 @@ $( "img" ).click(function() {
 $("#total").html(total)
 
   if(total>183) {
-    $("#warning").html("You've given out more executive orders than President Barack Obama! (183)")
+    $("#warning").html("This president gave out more executive orders than President Barack Obama! (183)")
   }
   else {
     $("#warning").html("")
   }
 
 });
+
+$('document').ready(function () {
+    $('#play').click(function () {
+        var audio = {};
+        audio["I'VE GOT THE (EXECUTIVE) POWER!"] = new Audio();
+        audio["I'VE GOT THE (EXECUTIVE) POWER!"].src = "Powercut.mp3"
+        audio["I'VE GOT THE (EXECUTIVE) POWER!"].addEventListener('load', function () {
+            audio["walk"].play();
+        });
+    });
+});   
 
 
 
