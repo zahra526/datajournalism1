@@ -63,22 +63,22 @@ img:hover {
   <p id="warning"></p>
   
 <div>
-  <img data-dose="3522" src="prez/FDR.jpg" alt="alternative text"></img>
-  <img data-dose="907" src="prez/Truman.jpg" alt="alternative text"></img>
-  <img data-dose="381" src="prez/Eisenhower.jpg" alt="alternative text"></img>
-  <img data-dose="364" src="prez/Reagan.jpg" alt="alternative text"></img>
-  <img data-dose="364" src="prez/Clinton.jpg" alt="alternative text"></img>
-  <img data-dose="325" src="prez/LBJ.jpg" alt="alternative text"></img>
+  <img data-order="3522" src="prez/FDR.jpg" alt="alternative text"></img>
+  <img data-order="907" src="prez/Truman.jpg" alt="alternative text"></img>
+  <img data-order="381" src="prez/Eisenhower.jpg" alt="alternative text"></img>
+  <img data-order="364" src="prez/Reagan.jpg" alt="alternative text"></img>
+  <img data-order="364" src="prez/Clinton.jpg" alt="alternative text"></img>
+  <img data-order="325" src="prez/LBJ.jpg" alt="alternative text"></img>
 </div>
 
 
 <div>
-  <img data-dose="320" src="prez/Carter.jpg" alt="alternative text"></img>
-  <img data-dose="291" src="prez/Bush2.jpg" alt="alternative text"></img>
-  <img data-dose="214" src="prez/JFK.png" alt="alternative text"></img>
-  <img data-dose="183" src="prez/Obama.jpg" alt="alternative text"></img>
-  <img date-dose="48" src="prez/Abe.jpg" alt="alternative text"></img>
-  <img date-dose="4" src="prez/TJ.jpg" alt="alternative text"></img>
+  <img data-order="320" src="prez/Carter.jpg" alt="alternative text"></img>
+  <img data-order="291" src="prez/Bush2.jpg" alt="alternative text"></img>
+  <img data-order="214" src="prez/JFK.png" alt="alternative text"></img>
+  <img data-order="183" src="prez/Obama.jpg" alt="alternative text"></img>
+  <img data-order="48" src="prez/Abe.jpg" alt="alternative text"></img>
+  <img data-order="4" src="prez/TJ.jpg" alt="alternative text"></img>
 </div>
 
   
@@ -88,25 +88,27 @@ var total=0;
 
 $( "img" ).click(function() {
 
+  // This is the dosage of the medicine I just clicked.
+   var drug=+$(this).attr("data-dose");
 
-  // If the prez is active (because I clicked on him), show opacity.
+  // If the medicine is active (because I clicked on it), show opacity.
   if($(this).hasClass('active')){
     total-=drug;
   }
-  //If the prez is not active (because I haven't clicked on him), show image unchanged.
+  //If the medicine is not active (because I haven't clicked on it), show image unchanged.
   else {
      total+=drug;
 
-  // This is the EO total of the prez I just clicked.
-   var drug=+$(this).attr("data-dose");
+   //Add the other medicine's dosage to what's clicked to show a total sum of acetaminophens.
 
+  }
 
 // toggle your class
   $(this).toggleClass('active');
 $("#total").html(total)
 
   if(total>183) {
-    $("#warning").html("This president has given out more executive actions that President Obama! (183)")
+    $("#warning").html("You've exceeded the maximum daily dose!")
   }
   else {
     $("#warning").html("")
