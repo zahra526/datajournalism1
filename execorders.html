@@ -49,22 +49,16 @@ img:hover {
     opacity: 1.0;
   }
 
-<div id="container">
-  <button id="play">
-    Play Music
-  </button>
-</div>
-  
-  
+    
 </style>
 </head>
 
 <body>
   <h1>I'VE GOT THE (EXECUTIVE) POWER!</h1>
   
-  <p id>Before President Obama used his executive authority to lay out a plan for immigration reform on November 20, many opponents charged that this is behavior similar to a king or a monarch. However, many fail to realize that Obama has actually used executive orders significantly less than past presidents.</p>
+  <p id>Before President Obama used his executive authority to lay out a plan for immigration reform on November 20, many opponents charged that this is behavior similar to a king or a monarch. However, many fail to realize that Obama has actually used executive action significantly less than past presidents.</p>
 
-  <p id="total">Click on a president to see how many executive orders he gave out during his time in office.</p>
+  <p id="total">Click on a president to see how many executive actions he gave out during his time in office.</p>
   <p id="warning"></p>
   
 <div>
@@ -105,14 +99,7 @@ $( "img" ).click(function() {
   else {
      total+=drug;
 
-   //Add the other president's EO total to that of the president clicked to show a total sum of EOs.
-
-  }
-
-// toggle your class
-  $(this).toggleClass('active');
-$("#total").html(total)
-
+  
   if(total>183) {
     $("#warning").html("This president gave out more executive orders than President Barack Obama! (183)")
   }
@@ -122,16 +109,6 @@ $("#total").html(total)
 
 });
 
-$('document').ready(function () {
-    $('#play').click(function () {
-        var audio = {};
-        audio["I'VE GOT THE (EXECUTIVE) POWER!"] = new Audio();
-        audio["I'VE GOT THE (EXECUTIVE) POWER!"].src = "Powercut.mp3"
-        audio["I'VE GOT THE (EXECUTIVE) POWER!"].addEventListener('load', function () {
-            audio["walk"].play();
-        });
-    });
-});   
 
 
 
