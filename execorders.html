@@ -88,27 +88,24 @@ var total=0;
 
 $( "img" ).click(function() {
 
-  // This is the dosage of the medicine I just clicked.
-   var drug=+$(this).attr("data-dose");
+  // This is total EOs of the prez I just clicked.
+   var drug=+$(this).attr("data-order");
 
-  // If the medicine is active (because I clicked on it), show opacity.
+  // If the prez is active (because I clicked on him), show opacity.
   if($(this).hasClass('active')){
-    total-=drug;
+    total-=order;
   }
-  //If the medicine is not active (because I haven't clicked on it), show image unchanged.
+  //If the prez is not active (because I haven't clicked on him), show image unchanged.
   else {
-     total+=drug;
+     total+=order;
 
-   //Add the other medicine's dosage to what's clicked to show a total sum of acetaminophens.
-
-  }
 
 // toggle your class
   $(this).toggleClass('active');
 $("#total").html(total)
 
   if(total>183) {
-    $("#warning").html("You've exceeded the maximum daily dose!")
+    $("#warning").html("This president has given out more executive orders than President Obama! (183)")
   }
   else {
     $("#warning").html("")
