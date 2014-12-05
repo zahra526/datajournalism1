@@ -81,34 +81,37 @@ img:hover {
 </div>
 
   
-
 <script src="jquery-2.1.1.min.js"></script>
 <script type="text/javascript">
 var total=0;
 
 $( "img" ).click(function() {
 
-  // This is the EO total of the president I just clicked.
-   var drug=+$(this).attr("data-dose");
 
-  // If the president is active (because I clicked on him), show opacity.
+  // If the prez is active (because I clicked on him), show opacity.
   if($(this).hasClass('active')){
     total-=drug;
   }
-  //If the president is not active (because I haven't clicked on him), show image unchanged.
+  //If the prez is not active (because I haven't clicked on him), show image unchanged.
   else {
      total+=drug;
 
-  
+  // This is the EO total of the prez I just clicked.
+   var drug=+$(this).attr("data-dose");
+
+
+// toggle your class
+  $(this).toggleClass('active');
+$("#total").html(total)
+
   if(total>183) {
-    $("#warning").html("This president gave out more executive orders than President Barack Obama! (183)")
+    $("#warning").html("This president has given out more executive actions that President Obama! (183)")
   }
   else {
     $("#warning").html("")
   }
 
 });
-
 
 
 
