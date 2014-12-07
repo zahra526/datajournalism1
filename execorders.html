@@ -65,17 +65,16 @@ img:hover {
 <div>
   <img data-order="290.6" src="prez/FDR.jpg" alt="alternative text"></img>
   <img data-order="116.6" src="prez/Truman.jpg" alt="alternative text"></img>
-  <img data-order="60.5" src="prez/Eisenhower.jpg" alt="alternative text"></img>
-  <img data-order="47.6" src="prez/Reagan.jpg" alt="alternative text"></img>
-  <img data-order="45.5" src="prez/Clinton.jpg" alt="alternative text"></img>
+  <img data-order="80" src="prez/Carter.jpg" alt="alternative text"></img>
+  <img data-order="75.4" src="prez/JFK.png" alt="alternative text"></img>
   <img data-order="62.9" src="prez/LBJ.jpg" alt="alternative text"></img>
+  <img data-order="60.5" src="prez/Eisenhower.jpg" alt="alternative text"></img>
 </div>
 
-
 <div>
-  <img data-order="80" src="prez/Carter.jpg" alt="alternative text"></img>
+  <img data-order="47.6" src="prez/Reagan.jpg" alt="alternative text"></img>
+  <img data-order="45.5" src="prez/Clinton.jpg" alt="alternative text"></img>
   <img data-order="36.4" src="prez/Bush2.jpg" alt="alternative text"></img>
-  <img data-order="75.4" src="prez/JFK.png" alt="alternative text"></img>
   <img data-order="33.6" src="prez/Obama.jpg" alt="alternative text"></img>
   <img data-order="11.7" src="prez/Abe.jpg" alt="alternative text"></img>
   <img data-order=".5" src="prez/TJ.jpg" alt="alternative text"></img>
@@ -88,18 +87,18 @@ var total=0;
 
 $( "img" ).click(function() {
 
-  // This is the dosage of the medicine I just clicked.
+  // This is the total amount of EOs from the president I just clicked.
    var drug=+$(this).attr("data-order");
 
-  // If the medicine is active (because I clicked on it), show opacity.
+  // If the president is active (because I clicked on him), show opacity.
   if($(this).hasClass('active')){
     total-=drug;
   }
-  //If the medicine is not active (because I haven't clicked on it), show image unchanged.
+  //If the president is not active (because I haven't clicked on it), show image unchanged.
   else {
      total+=drug;
 
-   //Add the other medicine's dosage to what's clicked to show a total sum of acetaminophens.
+   //Add clicked president's total EOs to the other president that is clicked to show a total sum of EOs.
 
   }
 
