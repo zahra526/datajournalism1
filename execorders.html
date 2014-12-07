@@ -40,7 +40,6 @@ div {
 img {
     border-radius: 50px;
     opacity: .5;
-    color:red;
 }
 
 img:hover {
@@ -83,6 +82,9 @@ img:hover {
   <img data-order=".5" src="prez/TJ.jpg" alt="alternative text"></img>
 </div>
 
+<p>Executive actions are informal moves by the president that don’t actually carry any legal weight and those that actually set policy can be overturned by courts or legislation passed by Congress. An executive order is anything that a president does unilaterally, and falls under the umbrella of executive action. They are legally binding and published in the Federal Register.</p>
+<p>In the words of Professor Kenneth Mayer, political science professor at the University of Wisconsin-Madison: “Every executive order is an executive action, but not every executive action is an executive order.”</p>
+<p>When it comes to comparing the amount of executive orders given out by American presidents, Mayer said, “Direct counting doesn’t tell you what you need to know.” For instance, although Barack Obama has given out less executive orders than more than half of American presidents, Mayer said that doesn’t mean he has taken a limited view of executive authority. In fact, Mayer said the Obama has been “pretty aggressive” in his use of executive authority.</p>
   
 <script src="jquery-2.1.1.min.js"></script>
 <script type="text/javascript">
@@ -97,11 +99,10 @@ $( "img" ).click(function() {
   if($(this).hasClass('active')){
     total-=drug;
   }
+
   //If the president is not active (because I haven't clicked on it), show image unchanged.
   else {
-     total+=drug;
-
-   //Add clicked president's total EOs to the other president that is clicked to show a total sum of EOs.
+     total=drug;
 
   }
 
