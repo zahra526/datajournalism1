@@ -22,7 +22,8 @@ body {
 p {
     font-family: Helvetica;
     font-weight: 100;
-    font-size: 16px;
+    font-size: 14px;
+    letter-spacing: -1px;
     margin-bottom:20px;
   }
 
@@ -40,7 +41,6 @@ div {
 img {
     border-radius: 50px;
     opacity: .5;
-    opacity color: red;
 }
 
 img:hover {
@@ -59,8 +59,8 @@ img:hover {
 <body>
   <h1>I'VE GOT THE (EXECUTIVE) POWER!</h1>
   
-  <p id>Before President Obama used his executive authority to lay out a plan for immigration reform on Nov. 20, 2014, many opponents charged that this is behavior similar to a king or a monarch. However, many fail to realize that Obama has actually used executive action significantly less than past presidents.</p>
-  <p>Click on a president to see how many executive orders he gave out during his time in office.</p>
+  <p id>Before President Obama used his executive authority to lay out a plan for immigration reform on Nov. 20, 2014, many opponents charged that this is behavior similar to a king or a monarch. However, many fail to realize that Obama has actually used executive action significantly less than past presidents. And executive action is very different from an actual executive order in the fact that the former holds no legal weight and the latter.</p>
+  <p>Click on a president to see how many executive actions he gave out during his time in office.</p>
 
   <p id="total">TOTAL</p>
   <p id="warning"></p>
@@ -83,10 +83,9 @@ img:hover {
   <img data-order=".5" src="prez/TJ.jpg" alt="alternative text"></img>
 </div>
 
-
-<p>FRANKLIN D. ROOSEVELT</p>
-<p>He ordered the New Deal.</p>
-
+<p>Executive actions are informal moves by the president that don't actually carry any legal weight and those that actually set policy can be overturned by courts or legislation passed by Congress. An executive order is anything that a president does unilaterally, and falls under the umbrella of executive action. They are legally binding and published in the Federal Register.</p>
+<p>In the words of Professor Kenneth Mayer, political science professor at the University of Wisconsin-Madison: “Every executive order is an executive action, but not every executive action is an executive order.”</p>
+<p>When it comes to comparing the amount of executive orders given out by American presidents, Mayer said, “Direct counting doesn’t tell you what you need to know.” For instance, although Barack Obama has given out less executive orders than more than half of American presidents, Mayer said that doesn’t mean he has taken a limited view of executive authority. In fact, Mayer said the Obama has been “pretty aggressive” in his use of executive authority.</p>
   
 <script src="jquery-2.1.1.min.js"></script>
 <script type="text/javascript">
@@ -94,17 +93,32 @@ var total=0;
 
 $( "img" ).click(function() {
 
+
+$("img").on('click', function () {
+    $(this).html('Activate');
+    $(this).removeClass('active');
+    $(this).addClass('inactive');
+});
+
+$("img").on('click', function () {
+    $(this).html('Deactivate');
+    $(this).removeClass('inactive');
+    $(this).addClass('active');
+});
+
+
+
   // This is the total amount of EOs from the president I just clicked.
-   var drug=$(this).attr("data-order");
+   var EO=+$(this).attr("data-order");
 
   // If the president is active (because I clicked on him), show opacity.
   if($(this).hasClass('active')){
-    total=drug;
+    total=EO;
   }
 
   //If the president is not active (because I haven't clicked on it), show image unchanged.
   else {
-     total=drug;
+     total=EO;
 
   }
 
@@ -117,6 +131,11 @@ $("#total").html(total)
   }
   else {
     $("#warning").html("")
+  }
+
+});
+
+
 
 
 </script>
