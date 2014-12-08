@@ -95,7 +95,7 @@ var total=0;
 $( "img" ).click(function() {
 
   // This is the total amount of EOs from the president I just clicked.
-   var drug=+$(this).attr("data-order");
+   var drug=$(this).attr("data-order");
 
   // If the president is active (because I clicked on him), show opacity.
   if($(this).hasClass('active')){
