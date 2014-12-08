@@ -22,7 +22,7 @@ body {
 p {
     font-family: Helvetica;
     font-weight: 100;
-    font-size: 16px;
+    font-size: 14px;
     letter-spacing: -1px;
     margin-bottom:20px;
   }
@@ -94,16 +94,16 @@ var total=0;
 $( "img" ).click(function() {
 
   // This is the total amount of EOs from the president I just clicked.
-   var drug=+$(this).attr("data-order");
+   var EO=+$(this).attr("data-order");
 
   // If the president is active (because I clicked on him), show opacity.
   if($(this).hasClass('active')){
-    total-=drug;
+    total=EO;
   }
 
   //If the president is not active (because I haven't clicked on it), show image unchanged.
   else {
-     total=drug;
+     total=EO;
 
   }
 
