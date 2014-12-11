@@ -66,10 +66,9 @@ img:hover {
 </head>
 
 <body>
-  <h1>I'VE GOT THE (EXECUTIVE) POWER!</h1>
+  <h4>Executive Actions by President</h4>
   
   <p id="total">TOTAL</p>
-  <p id="warning"></p>
   
 <div>
   <img data-order="60.5" src="prez/Eisenhower.jpg" alt="alternative text"></img>
@@ -109,13 +108,6 @@ $( "img" ).click(function() {
 // toggle your class
   $(this).toggleClass('active');
 $("#total").html(total)
-
-  if(total>33.6) {
-    $("#warning").html("This president has given out more executive orders than President Barack Obama!")
-  }
-  else {
-    $("#warning").html("")
-  }
 
 });
 
