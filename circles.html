@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>Executive Orders</title>
+<style type="text/css">
+
+body {
+    font-family: Helvetica;
+    width:760px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h1 {
+    font-family: Helvetica;
+    font-weight: 100;
+    letter-spacing: -2px;
+    border-bottom:1px solid #dedede;
+    margin-bottom:20px;
+    padding-bottom:20px;
+    text-align: center;
+  }
+
+p {
+    font-family: Helvetica;
+    font-weight: 100;
+    font-size: 14px;
+    letter-spacing: -.5px;
+    margin-bottom:20px;
+  }
+
+h4 {
+    font-family: Helvetica;
+    font-weight: 100;
+    letter-spacing: 3px;
+    border-bottom:1px solid #dedede;
+    margin-bottom:20px;
+    padding-bottom:20px;
+    text-align: center;
+}
+
+div {
+    margin-right: 60px;
+    margin-left: 68px;
+    margin-bottom: 0px
+}
+
+img {
+    border-radius: 50px;
+    opacity: .5;
+  
+}
+
+img:hover {
+    opacity: 1.0;
+}
+
+  .active {
+    opacity: 1.0;
+
+  
+
+  }
+
+    
+</style>
+</head>
+
+<body>
+  <h1>I'VE GOT THE (EXECUTIVE) POWER!</h1>
+  
+  <p id="total">TOTAL</p>
+  <p id="warning"></p>
+  
+<div>
+  <img data-order="290.6" src="prez/FDR.jpg" alt="alternative text"></img>
+  <img data-order="116.6" src="prez/Truman.jpg" alt="alternative text"></img>
+  <img data-order="80" src="prez/Carter.jpg" alt="alternative text"></img>
+  <img data-order="75.4" src="prez/JFK.png" alt="alternative text"></img>
+  <img data-order="62.9" src="prez/LBJ.jpg" alt="alternative text"></img>
+  <img data-order="60.5" src="prez/Eisenhower.jpg" alt="alternative text"></img>
+</div>
+
+<div>
+  <img data-order="47.6" src="prez/Reagan.jpg" alt="alternative text"></img>
+  <img data-order="45.5" src="prez/Clinton.jpg" alt="alternative text"></img>
+  <img data-order="36.4" src="prez/Bush2.jpg" alt="alternative text"></img>
+  <img data-order="33.6" src="prez/Obama.jpg" alt="alternative text"></img>
+  <img data-order="11.7" src="prez/Abe.jpg" alt="alternative text"></img>
+  <img data-order=".5" src="prez/TJ.jpg" alt="alternative text"></img>
+</div>
+
+  
+<script src="jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+var total=0;
+
+$( "img" ).click(function() {
+
+  // This is the total amount of EOs from the president I just clicked.
+   var EO=+$(this).attr("data-order");
+
+  // If the president is active (because I clicked on him), show opacity.
+  if($(this).hasClass('active')){
+    total=EO;
+  }
+
+  //If the president is not active (because I haven't clicked on it), show image unchanged.
+  else {
+     total=EO;
+
+  }
+
+// toggle your class
+  $(this).toggleClass('active');
+$("#total").html(total)
+
+  if(total>33.6) {
+    $("#warning").html("This president has given out more executive orders than President Barack Obama!")
+  }
+  else {
+    $("#warning").html("")
+  }
+
+});
+
+
+
+
+</script>
+
+
+</body>
+</html>
